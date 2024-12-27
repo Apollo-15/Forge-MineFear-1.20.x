@@ -12,6 +12,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.rayl1x.minefear.block.ModBlocks;
 import net.rayl1x.minefear.item.ModCreativeModTabs;
 import net.rayl1x.minefear.item.ModItems;
 import org.slf4j.Logger;
@@ -28,6 +29,7 @@ public class MineFear {
         ModCreativeModTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -44,6 +46,13 @@ public class MineFear {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.TITAN_INGOT);
             event.accept(ModItems.RAW_TITAN);
+        }
+        if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+            event.accept(ModBlocks.DEEPSLATE_TITAN_ORE);
+            event.accept(ModBlocks.TITAN_ORE);
+        }
+        if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+            event.accept(ModBlocks.TITAN_BLOCK);
         }
     }
 
