@@ -8,6 +8,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.rayl1x.minefear.MineFear;
+import net.rayl1x.minefear.block.ModBlocks;
 
 public class ModCreativeModTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
@@ -19,6 +20,10 @@ public class ModCreativeModTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.TITAN_INGOT.get());
                         output.accept(ModItems.RAW_TITAN.get());
+
+                        output.accept(ModBlocks.TITAN_ORE.get());
+                        output.accept(ModBlocks.DEEPSLATE_TITAN_ORE.get());
+                        output.accept(ModBlocks.TITAN_BLOCK.get());
                     })
                     .build());
 
