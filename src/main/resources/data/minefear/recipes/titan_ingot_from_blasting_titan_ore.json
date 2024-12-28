@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 1.2,
+  "group": "titan_ingot",
+  "ingredient": {
+    "item": "minefear:titan_ore"
+  },
+  "result": "minefear:titan_ingot"
+}
