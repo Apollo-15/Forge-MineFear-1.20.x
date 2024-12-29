@@ -20,6 +20,7 @@ public class ModCreativeModTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.TITAN_INGOT.get());
                         output.accept(ModItems.RAW_TITAN.get());
+                        output.accept(ModItems.STEEL_INGOT.get());
 
                         output.accept(ModBlocks.TITAN_ORE.get());
                         output.accept(ModBlocks.DEEPSLATE_TITAN_ORE.get());
