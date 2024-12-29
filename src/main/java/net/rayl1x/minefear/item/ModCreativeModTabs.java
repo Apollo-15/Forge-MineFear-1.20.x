@@ -24,6 +24,8 @@ public class ModCreativeModTabs {
                         output.accept(ModBlocks.TITAN_ORE.get());
                         output.accept(ModBlocks.DEEPSLATE_TITAN_ORE.get());
                         output.accept(ModBlocks.TITAN_BLOCK.get());
+
+                        output.accept(ModBlocks.WEAPON_WORKBENCH.get());
                     })
                     .build());
 

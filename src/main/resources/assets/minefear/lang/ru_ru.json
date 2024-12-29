@@ -4,5 +4,7 @@
 
   "block.minefear.titan_ore": "Титановая Руда",
   "block.minefear.deepslate_titan_ore": "Титаноносный Глубинный Сланец",
-  "block.minefear.titan_block": "Титановый Блок"
+  "block.minefear.titan_block": "Титановый Блок",
+
+  "block.minefear.weapon_work_bench": "Оружейный Верстак"
 }
