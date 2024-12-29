@@ -10,6 +10,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.rayl1x.minefear.MineFear;
+import net.rayl1x.minefear.block.custom.WeaponWorkbench;
 import net.rayl1x.minefear.item.ModItems;
 
 import java.util.function.Supplier;
@@ -26,6 +27,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> TITAN_BLOCK = registerBlock("titan_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+
+    public static final RegistryObject<Block> WEAPON_WORKBENCH = registerBlock("weapon_work_bench",
+            () -> new WeaponWorkbench(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
