@@ -35,19 +35,25 @@ public class WeaponWorkbench extends Block {
     @Override
     public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
         return Stream.of(
-                Block.box(0, 11, 1, 29, 12, 13),
-                Block.box(-1, 2, 1, 0, 10, 13),
+                Block.box(0, 15, 1, 29, 16, 13),
+                Block.box(-1, 2, 1, 0, 14, 13),
                 Block.box(0, 2, 1, 20, 3, 13),
-                Block.box(-1, 0, 1, 0, 2, 2),
-                Block.box(30, 0, 1, 31, 27, 14),
-                Block.box(31, 1, 2, 32, 26, 13),
-                Block.box(20, 0, 1, 21, 11, 13),
-                Block.box(21, 8, 2, 29, 11, 3),
-                Block.box(21, 0, 2, 29, 5, 3),
-                Block.box(21, 5, 1, 29, 8, 2),
-                Block.box(21, 6, 2, 22, 8, 12),
-                Block.box(0, 3, 15, 29, 26, 16),
-                Block.box(21, 0, 3, 29, 1, 13)
+                Block.box(30, 0, 1, 31, 31, 14),
+                Block.box(31, 1, 2, 32, 30, 13),
+                Block.box(20, 0, 1, 21, 15, 13),
+                Block.box(21, 4, 2, 29, 9, 3),
+                Block.box(21, 0, 1, 29, 5, 2),
+                Block.box(21, 9, 1, 29, 12, 2),
+                Block.box(0, 3, 15, 29, 30, 16),
+                Block.box(21, 0, 2, 30, 1, 13)
         ).reduce((v1, v2) -> Shapes.join(v1, v2, BooleanOp.OR)).get();
     }
+
+    @Override
+    public boolean isCollisionShapeFullBlock(BlockState state, BlockGetter level, BlockPos pos) {
+        return false;
+    }
+
+
 }
+
