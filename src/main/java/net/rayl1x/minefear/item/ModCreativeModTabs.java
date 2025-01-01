@@ -27,6 +27,10 @@ public class ModCreativeModTabs {
                         output.accept(ModBlocks.TITAN_BLOCK.get());
 
                         output.accept(ModBlocks.WEAPON_WORKBENCH.get());
+                        output.accept(ModBlocks.WEAPON_WORKBENCH_TOP_RIGHT.get());
+                        output.accept(ModBlocks.WEAPON_WORKBENCH_TOP_LEFT.get());
+                        output.accept(ModBlocks.WEAPON_WORKBENCH_BOTTOM_LEFT.get());
+                        output.accept(ModBlocks.WEAPON_WORKBENCH_BOTTOM_RIGHT.get());
                     })
                     .build());
 
