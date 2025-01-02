@@ -3,9 +3,23 @@
   "item.minefear.steel_ingot": "Стальной Слиток",
   "item.minefear.raw_titan": "Рудный Титан",
 
+  "item.minefear.canned_beef_raw": "Сырая Консервированная Говядина",
+  "item.minefear.canned_beef_cooked": "Приготовленная Консервированная Говядина",
+  "item.minefear.canned_porkchop_raw": "Сырая Консервированная Свинина",
+  "item.minefear.canned_porkchop_cooked": "Приготовленная Консервированная Свинина",
+  "item.minefear.canned_mutton_raw": "Сырая Консервированная Баранина",
+  "item.minefear.canned_mutton_cooked": "Приготовленная Консервированная Баранина",
+  "item.minefear.canned_rabbit_raw": "Сырая Консервированная Крольчатина",
+  "item.minefear.canned_rabbit_cooked": "Приготовленная Консервированная Крольчатина",
+  "item.minefear.canned_chicken_raw": "Сырая Консервированная Курятина",
+  "item.minefear.canned_chicken_cooked": "Приготовленная Консервированная Курятина",
+
   "block.minefear.titan_ore": "Титановая Руда",
   "block.minefear.deepslate_titan_ore": "Титаноносный Глубинный Сланец",
   "block.minefear.titan_block": "Титановый Блок",
 
-  "block.minefear.weapon_work_bench": "Оружейный Верстак"
+  "block.minefear.weapon_work_bench": "Оружейный Верстак",
+
+  "creativetab.minefear_tab": "Mine Fear Mod Блоки",
+  "creative.minefear_food_tab": "Mine Fear Mod Еда"
 }
