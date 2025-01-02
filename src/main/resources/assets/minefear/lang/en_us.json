@@ -3,10 +3,22 @@
   "item.minefear.steel_ingot": "Steel Ingot",
   "item.minefear.raw_titan": "Raw Titan",
 
+  "item.minefear.canned_beef_raw": "Raw Canned Beef",
+  "item.minefear.canned_beef_cooked": "Cooked Canned Beef",
+  "item.minefear.canned_porkchop_raw": "Raw Canned Pork",
+  "item.minefear.canned_porkchop_cooked": "Cooked Canned Pork",
+  "item.minefear.canned_mutton_raw": "Raw Canned Mutton",
+  "item.minefear.canned_mutton_cooked": "Cooked Canned Mutton",
+  "item.minefear.canned_rabbit_raw": "Raw Canned Rabbit",
+  "item.minefear.canned_rabbit_cooked": "Cooked Canned Rabbit",
+  "item.minefear.canned_chicken_raw": "Raw Canned Chicken",
+  "item.minefear.canned_chicken_cooked": "Cooked Canned Chicken",
+
   "block.minefear.titan_ore": "Titan Ore",
   "block.minefear.deepslate_titan_ore": "Deepslate Titan Ore",
   "block.minefear.titan_block": "Block of Titan",
   "block.minefear.weapon_work_bench": "Weapon Workbench",
 
-  "creativetab.minefear_tab": "Mine Fear Mod Blocks"
+  "creativetab.minefear_tab": "Mine Fear Mod Blocks",
+  "creative.minefear_food_tab": "Mine Fear Mod Food"
 }
