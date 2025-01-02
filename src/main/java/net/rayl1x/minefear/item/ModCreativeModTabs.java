@@ -30,6 +30,24 @@ public class ModCreativeModTabs {
                     })
                     .build());
 
+    public static final RegistryObject<CreativeModeTab> MINEFEAR_FOOD_TAB = CREATIVE_MODE_TABS.register("minefear_food_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.CANNED_BEEF_RAW.get()))
+                .title(Component.translatable("creative.minefear_food_tab"))
+                .displayItems((itemDisplayParameters, output) -> {
+                    output.accept(ModItems.CANNED_BEEF_RAW.get());
+                    output.accept(ModItems.CANNED_BEEF_COOKED.get());
+                    output.accept(ModItems.CANNED_MUTTON_RAW.get());
+                    output.accept(ModItems.CANNED_MUTTON_COOKED.get());
+                    output.accept(ModItems.CANNED_CHICKEN_RAW.get());
+                    output.accept(ModItems.CANNED_CHICKEN_COOKED.get());
+                    output.accept(ModItems.CANNED_PORKCHOP_RAW.get());
+                    output.accept(ModItems.CANNED_PORKCHOP_COOKED.get());
+                    output.accept(ModItems.CANNED_RABBIT_RAW.get());
+                    output.accept(ModItems.CANNED_RABBIT_COOKED.get());
+
+                })
+                .build());
+
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TABS.register(eventBus);
     }
