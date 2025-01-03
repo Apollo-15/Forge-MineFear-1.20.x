@@ -1,25 +1,37 @@
 {
-  "item.minefear.titan_ingot": "Титановый Слиток",
-  "item.minefear.steel_ingot": "Стальной Слиток",
-  "item.minefear.raw_titan": "Рудный Титан",
+  "item.minefear.acacia_bark": "Акациевая Кора",
+  "item.minefear.birch_bark": "Берёзовая кора",
+  "item.minefear.cherry_bark": "Вишнёвая кора",
+  "item.minefear.dark_oak_bark": "Тёмная дубовая кора",
+  "item.minefear.jungle_bark": "Кора тропического дерева",
+  "item.minefear.mangrove_bark": "Мангровая кора",
+  "item.minefear.oak_bark": "Дубовая кора",
+  "item.minefear.spruce_bark": "Еловая кора",
 
-  "item.minefear.canned_beef_raw": "Сырая Консервированная Говядина",
-  "item.minefear.canned_beef_cooked": "Приготовленная Консервированная Говядина",
-  "item.minefear.canned_porkchop_raw": "Сырая Консервированная Свинина",
-  "item.minefear.canned_porkchop_cooked": "Приготовленная Консервированная Свинина",
-  "item.minefear.canned_mutton_raw": "Сырая Консервированная Баранина",
-  "item.minefear.canned_mutton_cooked": "Приготовленная Консервированная Баранина",
-  "item.minefear.canned_rabbit_raw": "Сырая Консервированная Крольчатина",
-  "item.minefear.canned_rabbit_cooked": "Приготовленная Консервированная Крольчатина",
-  "item.minefear.canned_chicken_raw": "Сырая Консервированная Курятина",
-  "item.minefear.canned_chicken_cooked": "Приготовленная Консервированная Курятина",
 
-  "block.minefear.titan_ore": "Титановая Руда",
-  "block.minefear.deepslate_titan_ore": "Титаноносный Глубинный Сланец",
-  "block.minefear.titan_block": "Титановый Блок",
+  "item.minefear.titan_ingot": "Титановый слиток",
+  "item.minefear.steel_ingot": "Стальной слиток",
+  "item.minefear.raw_titan": "Рудный титан",
+
+  "item.minefear.canned_beef_raw": "Сырая консервированная говядина",
+  "item.minefear.canned_beef_cooked": "Приготовленная консервированная говядина",
+  "item.minefear.canned_porkchop_raw": "Сырая консервированная свинина",
+  "item.minefear.canned_porkchop_cooked": "Приготовленная консервированная свинина",
+  "item.minefear.canned_mutton_raw": "Сырая консервированная баранина",
+  "item.minefear.canned_mutton_cooked": "Приготовленная консервированная баранина",
+  "item.minefear.canned_rabbit_raw": "Сырая консервированная крольчатина",
+  "item.minefear.canned_rabbit_cooked": "Приготовленная консервированная крольчатина",
+  "item.minefear.canned_chicken_raw": "Сырая Консервированная курятина",
+  "item.minefear.canned_chicken_cooked": "Приготовленная консервированная курятина",
+
+
+  "block.minefear.titan_ore": "Титановая руда",
+  "block.minefear.deepslate_titan_ore": "Титаноносный глубинный сланец",
+  "block.minefear.titan_block": "Титановый блок",
 
   "block.minefear.weapon_work_bench": "Оружейный Верстак",
 
-  "creativetab.minefear_tab": "Mine Fear Mod Блоки",
-  "creative.minefear_food_tab": "Mine Fear Mod Еда"
+  "creativetab.minefear_blocks_tab": "Mine Fear Mod | Блоки",
+  "creativetab.minefear_food_tab": "Mine Fear Mod | Еда",
+  "creativetab.minefear_ingredients_tab": "Mine Fear Mod | Ингридиенты"
 }

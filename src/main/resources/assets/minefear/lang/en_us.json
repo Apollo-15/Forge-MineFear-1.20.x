@@ -1,4 +1,13 @@
 {
+  "item.minefear.acacia_bark": "Acacia Bark",
+  "item.minefear.birch_bark": "Birch Bark",
+  "item.minefear.cherry_bark": "Cherry Bark",
+  "item.minefear.dark_oak_bark": "Dark Oak Bark",
+  "item.minefear.jungle_bark": "Jungle Bark",
+  "item.minefear.mangrove_bark": "Mangrove Bark",
+  "item.minefear.oak_bark": "Oak Bark",
+  "item.minefear.spruce_bark": "Spruce Bark",
+
   "item.minefear.titan_ingot": "Titan Ingot",
   "item.minefear.steel_ingot": "Steel Ingot",
   "item.minefear.raw_titan": "Raw Titan",
@@ -19,6 +28,7 @@
   "block.minefear.titan_block": "Block of Titan",
   "block.minefear.weapon_work_bench": "Weapon Workbench",
 
-  "creativetab.minefear_tab": "Mine Fear Mod Blocks",
-  "creative.minefear_food_tab": "Mine Fear Mod Food"
+  "creativetab.minefear_blocks_tab": "Mine Fear Mod | Blocks",
+  "creativetab.minefear_food_tab": "Mine Fear Mod | Food",
+  "creativetab.minefear_ingredients_tab": "Mine Fear Mod | Ingredients"
 }
