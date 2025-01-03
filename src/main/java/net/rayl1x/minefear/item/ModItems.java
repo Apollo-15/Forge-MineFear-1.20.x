@@ -6,6 +6,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.rayl1x.minefear.MineFear;
+import net.rayl1x.minefear.item.custom.FuelItem;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -49,6 +50,30 @@ public class ModItems {
 
     public static final RegistryObject<Item> CANNED_RABBIT_COOKED = ITEMS.register("canned_rabbit_cooked",
             () -> new Item(new Item.Properties().food(ModFoods.CANNED_RABBIT_COOKED)));
+
+    public static final RegistryObject<Item> OAK_BARK = ITEMS.register("oak_bark",
+            () -> new FuelItem(new Item.Properties(), 200));
+
+    public static final RegistryObject<Item> BIRCH_BARK = ITEMS.register("birch_bark",
+            () -> new FuelItem(new Item.Properties(), 200));
+
+    public static final RegistryObject<Item> ACACIA_BARK = ITEMS.register("acacia_bark",
+            () -> new FuelItem(new Item.Properties(), 200));
+
+    public static final RegistryObject<Item> CHERRY_BARK = ITEMS.register("cherry_bark",
+            () -> new FuelItem(new Item.Properties(), 200));
+
+    public static final RegistryObject<Item> DARK_OAK_BARK = ITEMS.register("dark_oak_bark",
+            () -> new FuelItem(new Item.Properties(), 200));
+
+    public static final RegistryObject<Item> JUNGLE_BARK = ITEMS.register("jungle_bark",
+            () -> new FuelItem(new Item.Properties(), 200));
+
+    public static final RegistryObject<Item> MANGROVE_BARK = ITEMS.register("mangrove_bark",
+            () -> new FuelItem(new Item.Properties(), 200));
+
+    public static final RegistryObject<Item> SPRUCE_BARK = ITEMS.register("spruce_bark",
+            () -> new FuelItem(new Item.Properties(), 200));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
