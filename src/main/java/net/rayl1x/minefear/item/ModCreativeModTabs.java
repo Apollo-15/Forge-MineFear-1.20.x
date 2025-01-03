@@ -14,13 +14,10 @@ public class ModCreativeModTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MineFear.MODID);
 
-    public static final RegistryObject<CreativeModeTab> MINEFEAR_TAB = CREATIVE_MODE_TABS.register("minefear_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.TITAN_INGOT.get()))
-                    .title(Component.translatable("creativetab.minefear_tab"))
+    public static final RegistryObject<CreativeModeTab> MINEFEAR_TAB_BLOCKS = CREATIVE_MODE_TABS.register("minefear_tab_blocks",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.TITAN_BLOCK.get()))
+                    .title(Component.translatable("creativetab.minefear_tab_blocks"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModItems.TITAN_INGOT.get());
-                        output.accept(ModItems.RAW_TITAN.get());
-                        output.accept(ModItems.STEEL_INGOT.get());
 
                         output.accept(ModBlocks.TITAN_ORE.get());
                         output.accept(ModBlocks.DEEPSLATE_TITAN_ORE.get());
@@ -44,6 +41,26 @@ public class ModCreativeModTabs {
                     output.accept(ModItems.CANNED_PORKCHOP_COOKED.get());
                     output.accept(ModItems.CANNED_RABBIT_RAW.get());
                     output.accept(ModItems.CANNED_RABBIT_COOKED.get());
+
+                })
+                .build());
+
+    public static final RegistryObject<CreativeModeTab> MINEFEAR_RESOURCE_TAB = CREATIVE_MODE_TABS.register("minefear_resource_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.TITAN_INGOT.get()))
+                .title(Component.translatable("creative.minefear_resource_tab"))
+                .displayItems((itemDisplayParameters, output) -> {
+                    output.accept(ModItems.TITAN_INGOT.get());
+                    output.accept(ModItems.RAW_TITAN.get());
+                    output.accept(ModItems.STEEL_INGOT.get());
+
+                    output.accept(ModItems.OAK_BARK.get());
+                    output.accept(ModItems.BIRCH_BARK.get());
+                    output.accept(ModItems.DARK_OAK_BARK.get());
+                    output.accept(ModItems.SPRUCE_BARK.get());
+                    output.accept(ModItems.ACACIA_BARK.get());
+                    output.accept(ModItems.JUNGLE_BARK.get());
+                    output.accept(ModItems.CHERRY_BARK.get());
+                    output.accept(ModItems.MANGROVE_BARK.get());
 
                 })
                 .build());
