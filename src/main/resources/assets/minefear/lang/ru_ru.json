@@ -11,6 +11,11 @@
   "item.minefear.titan_ingot": "Титановый слиток",
   "item.minefear.steel_ingot": "Стальной слиток",
   "item.minefear.raw_titan": "Рудный титан",
+  "item.minefear.tin_ingot": "Оловяный слиток",
+  "item.minefear.raw_tin": "Рудное олово",
+  "item.minefear.tin_nugget": "Кусочек олова",
+  "item.minefear.tin_plate": "Жестяная пластина",
+  "item.minefear.tin_can": "Жестяная банка",
 
   "item.minefear.canned_beef_raw": "Сырая консервированная говядина",
   "item.minefear.canned_beef_cooked": "Приготовленная консервированная говядина",
@@ -23,9 +28,12 @@
   "item.minefear.canned_chicken_raw": "Сырая Консервированная курятина",
   "item.minefear.canned_chicken_cooked": "Приготовленная консервированная курятина",
 
+  "block.minefear.tin_ore": "Оловяная руда",
+  "block.minefear.tin_block": "Блок олова",
+
   "block.minefear.titan_ore": "Титановая руда",
   "block.minefear.deepslate_titan_ore": "Титаноносный глубинный сланец",
-  "block.minefear.titan_block": "Титановый блок",
+  "block.minefear.titan_block": "Блок титана",
 
   "block.minefear.weapon_work_bench": "Оружейный Верстак",
 
