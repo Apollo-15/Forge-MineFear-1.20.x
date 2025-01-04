@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:beef"
+    },
+    {
+      "item": "minefear:tin_can"
+    }
+  ],
+  "result": {
+    "item": "minefear:canned_beef_raw"
+  }
+}
