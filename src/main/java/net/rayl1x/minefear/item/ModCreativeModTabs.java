@@ -68,6 +68,8 @@ public class ModCreativeModTabs {
                     output.accept(ModItems.TIN_INGOT.get());
                     output.accept(ModItems.TIN_NUGGET.get());
                     output.accept(ModItems.RAW_TIN.get());
+                    output.accept(ModItems.TIN_CAN.get());
+                    output.accept(ModItems.TIN_PLATE.get());
 
                 })
                 .build());

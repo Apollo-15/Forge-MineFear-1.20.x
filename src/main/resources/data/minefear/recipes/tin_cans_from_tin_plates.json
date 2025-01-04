@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "   ",
+    "# #",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "minefear:tin_plate"
+    }
+  },
+  "result": {
+    "item": "minefear:tin_can",
+    "count": 3
+  }
+}

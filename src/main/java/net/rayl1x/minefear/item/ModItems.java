@@ -30,6 +30,12 @@ public class ModItems {
     public static final RegistryObject<Item> TIN_NUGGET = ITEMS.register("tin_nugget",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> TIN_PLATE = ITEMS.register("tin_plate",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> TIN_CAN = ITEMS.register("tin_can",
+            () -> new Item(new Item.Properties()));
+
     public static final RegistryObject<Item> CANNED_BEEF_RAW = ITEMS.register("canned_beef_raw",
             () -> new Item(new Item.Properties().food(ModFoods.CANNED_BEEF_RAW)));
 
