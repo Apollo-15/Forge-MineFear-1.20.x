@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minefear:tin_ingot"
+    }
+  },
+  "result": {
+    "item": "minefear:tin_block"
+  }
+}

@@ -58,16 +58,16 @@ public class BarkEventHandler {
         ItemStack bark = getBarkItemForLog(blockState);
         if (bark != null){
             BlockState strippedState = getStrippedLog(blockState);
-            if (strippedState != null){
-                strippedState = strippedState.setValue(BlockStateProperties.AXIS, blockState.getValue(BlockStateProperties.AXIS)); // Preserve orientation
-                level.setBlock(event.getPos(), strippedState, 11);
-                if(!level.isClientSide){
+
+            strippedState = strippedState.setValue(BlockStateProperties.AXIS, blockState.getValue(BlockStateProperties.AXIS)); // Preserve orientation
+            level.setBlock(event.getPos(), strippedState, 11);
+            if(!level.isClientSide){
+                Block.popResource(level, event.getPos(), bark);
+                for (int i = 0; i < barkAmount; i++) {
                     Block.popResource(level, event.getPos(), bark);
-                    for (int i = 0; i < barkAmount; i++) {
-                        Block.popResource(level, event.getPos(), bark);
-                    }
                 }
             }
+
         }
         heldItem.hurtAndBreak(1, player, (p) -> p.broadcastBreakEvent(event.getHand()));
 

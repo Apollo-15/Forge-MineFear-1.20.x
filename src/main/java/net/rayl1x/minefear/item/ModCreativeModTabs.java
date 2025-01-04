@@ -23,6 +23,9 @@ public class ModCreativeModTabs {
                         output.accept(ModBlocks.DEEPSLATE_TITAN_ORE.get());
                         output.accept(ModBlocks.TITAN_BLOCK.get());
 
+                        output.accept(ModBlocks.TIN_ORE.get());
+                        output.accept(ModBlocks.TIN_BLOCK.get());
+
                         output.accept(ModBlocks.WEAPON_WORKBENCH.get());
                     })
                     .build());
@@ -46,7 +49,7 @@ public class ModCreativeModTabs {
                 .build());
 
     public static final RegistryObject<CreativeModeTab> MINEFEAR_INGREDIENTS_TAB = CREATIVE_MODE_TABS.register("minefear_ingredients_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.TITAN_INGOT.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.TITAN_INGOT.get( )))
                 .title(Component.translatable("creativetab.minefear_ingredients_tab"))
                 .displayItems((itemDisplayParameters, output) -> {
                     output.accept(ModItems.OAK_BARK.get());
@@ -61,6 +64,10 @@ public class ModCreativeModTabs {
                     output.accept(ModItems.TITAN_INGOT.get());
                     output.accept(ModItems.RAW_TITAN.get());
                     output.accept(ModItems.STEEL_INGOT.get());
+
+                    output.accept(ModItems.TIN_INGOT.get());
+                    output.accept(ModItems.TIN_NUGGET.get());
+                    output.accept(ModItems.RAW_TIN.get());
 
                 })
                 .build());

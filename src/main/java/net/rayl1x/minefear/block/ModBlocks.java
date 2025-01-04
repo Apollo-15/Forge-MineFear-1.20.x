@@ -28,6 +28,12 @@ public class ModBlocks {
     public static final RegistryObject<Block> TITAN_BLOCK = registerBlock("titan_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
+    public static final RegistryObject<Block> TIN_ORE = registerBlock("tin_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)));
+
+    public static final RegistryObject<Block> TIN_BLOCK = registerBlock("tin_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+
     public static final RegistryObject<Block> WEAPON_WORKBENCH = registerBlock("weapon_work_bench",
             () -> new WeaponWorkbench(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
 

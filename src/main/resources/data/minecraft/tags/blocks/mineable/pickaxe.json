@@ -2,6 +2,8 @@
   "values": [
     "minefear:titan_block",
     "minefear:titan_ore",
-    "minefear:deepslate_titan_ore"
+    "minefear:deepslate_titan_ore",
+
+    "minefear:tin_ore"
   ]
 }
