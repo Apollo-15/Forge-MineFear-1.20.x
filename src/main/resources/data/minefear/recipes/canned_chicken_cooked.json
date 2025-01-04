@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "misc",
+  "cookingtime": 300,
+  "experience": 0.3,
+  "group": "canned_food",
+  "ingredient": {
+    "item": "minefear:canned_chicken_raw"
+  },
+  "result": "minefear:canned_chicken_cooked"
+}

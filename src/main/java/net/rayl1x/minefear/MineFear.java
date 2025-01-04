@@ -43,17 +43,17 @@ public class MineFear {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.TITAN_INGOT);
-            event.accept(ModItems.RAW_TITAN);
-        }
-        if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
-            event.accept(ModBlocks.DEEPSLATE_TITAN_ORE);
-            event.accept(ModBlocks.TITAN_ORE);
-        }
-        if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
-            event.accept(ModBlocks.TITAN_BLOCK);
-        }
+//        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+//            event.accept(ModItems.TITAN_INGOT);
+//            event.accept(ModItems.RAW_TITAN);
+//        }
+//        if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+//            event.accept(ModBlocks.DEEPSLATE_TITAN_ORE);
+//            event.accept(ModBlocks.TITAN_ORE);
+//        }
+//        if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+//            event.accept(ModBlocks.TITAN_BLOCK);
+//        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

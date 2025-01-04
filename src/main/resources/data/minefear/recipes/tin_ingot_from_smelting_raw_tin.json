@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 230,
+  "experience": 0.9,
+  "group": "tin_ingot",
+  "ingredient": {
+    "item": "minefear:raw_tin"
+  },
+  "result": "minefear:tin_ingot"
+}

@@ -3,9 +3,9 @@
   "category": "misc",
   "cookingtime": 115,
   "experience": 1.2,
-  "group": "titan_ingot",
+  "group": "tin_ingot",
   "ingredient": {
-    "item": "minefear:titan_ore"
+    "item": "minefear:raw_tin"
   },
-  "result": "minefear:titan_ingot"
+  "result": "minefear:tin_ingot"
 }

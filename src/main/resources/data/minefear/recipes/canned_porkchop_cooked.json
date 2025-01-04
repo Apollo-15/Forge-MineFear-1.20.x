@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "misc",
+  "cookingtime": 300,
+  "experience": 0.5,
+  "group": "canned_food",
+  "ingredient": {
+    "item": "minefear:canned_porkchop_raw"
+  },
+  "result": "minefear:canned_porkchop_cooked"
+}
