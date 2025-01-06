@@ -1,7 +1,8 @@
 {
   "variants": {
-    "": {
-      "model": "minefear:block/weapon_work_bench"
-    }
+    "facing=north": { "model": "minefear:block/weapon_work_bench", "y": 0 },
+    "facing=east": { "model": "minefear:block/weapon_work_bench", "y": 90 },
+    "facing=south": { "model": "minefear:block/weapon_work_bench", "y": 180 },
+    "facing=west": { "model": "minefear:block/weapon_work_bench", "y": 270 }
   }
 }
