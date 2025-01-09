@@ -37,12 +37,6 @@ public class ModBlocks {
     public static final RegistryObject<Block> WEAPON_WORKBENCH = registerBlock("weapon_work_bench",
             () -> new WeaponWorkbench(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
 
-    public static final RegistryObject<Block> WEAPON_WORKBENCH_BOTTOM_LEFT = registerBlock("weapon_work_bench_bottom_left",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
-    
-    public static final RegistryObject<Block> WEAPON_WORKBENCH_BOTTOM_RIGHT = registerBlock("weapon_work_bench_bottom_right",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
-
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
