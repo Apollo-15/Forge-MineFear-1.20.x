@@ -16,7 +16,25 @@ public class CannedFoodRecieps extends ModRecipeProvider {
         super(pOutput);
     }
 
-    public static void addCannedFoodRecipes(Consumer<FinishedRecipe> consumer) {
+    public static void addCannedFoodCookedRecipes(Consumer<FinishedRecipe> consumer) {
+        campfireCooking(consumer, ModItems.CANNED_BEEF_RAW.get(), ModItems.CANNED_BEEF_COOKED.get(),
+                0.5f, 350);
+
+        campfireCooking(consumer, ModItems.CANNED_PORKCHOP_RAW.get(), ModItems.CANNED_PORKCHOP_COOKED.get(),
+                0.5f, 350);
+
+        campfireCooking(consumer, ModItems.CANNED_RABBIT_RAW.get(), ModItems.CANNED_RABBIT_COOKED.get(),
+                0.4f, 350);
+
+        campfireCooking(consumer, ModItems.CANNED_MUTTON_RAW.get(), ModItems.CANNED_MUTTON_COOKED.get(),
+                0.4f, 350);
+
+        campfireCooking(consumer, ModItems.CANNED_CHICKEN_RAW.get(), ModItems.CANNED_CHICKEN_COOKED.get(),
+                0.3f, 350);
+
+    }
+
+    public static void addCannedFoodRawRecipes(Consumer<FinishedRecipe> consumer) {
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.CANNED_BEEF_RAW.get())
             .requires(ModItems.TIN_CAN.get())
             .requires(Items.BEEF)
@@ -47,5 +65,4 @@ public class CannedFoodRecieps extends ModRecipeProvider {
             .unlockedBy(getHasName(ModItems.TIN_CAN.get()), has(ModItems.TIN_CAN.get()))
             .save(consumer);
     }
-
 }

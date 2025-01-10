@@ -52,14 +52,6 @@ public class ModCreativeModTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.TITAN_INGOT.get( )))
                 .title(Component.translatable("creativetab.minefear_ingredients_tab"))
                 .displayItems((itemDisplayParameters, output) -> {
-                    output.accept(ModItems.OAK_BARK.get());
-                    output.accept(ModItems.BIRCH_BARK.get());
-                    output.accept(ModItems.DARK_OAK_BARK.get());
-                    output.accept(ModItems.SPRUCE_BARK.get());
-                    output.accept(ModItems.ACACIA_BARK.get());
-                    output.accept(ModItems.JUNGLE_BARK.get());
-                    output.accept(ModItems.CHERRY_BARK.get());
-                    output.accept(ModItems.MANGROVE_BARK.get());
 
                     output.accept(ModItems.TITAN_INGOT.get());
                     output.accept(ModItems.RAW_TITAN.get());

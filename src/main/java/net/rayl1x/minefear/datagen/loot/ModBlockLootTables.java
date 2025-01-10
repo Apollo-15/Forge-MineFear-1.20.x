@@ -1,7 +1,6 @@
 package net.rayl1x.minefear.datagen.loot;
 
 import net.minecraft.data.loot.BlockLootSubProvider;
-import net.minecraft.world.flag.FeatureFlagSet;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.enchantment.Enchantments;
@@ -10,7 +9,6 @@ import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
-import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraftforge.registries.RegistryObject;
 import net.rayl1x.minefear.block.ModBlocks;
 import net.rayl1x.minefear.item.ModItems;
@@ -37,7 +35,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 block -> createSimpleOreDrop(ModBlocks.TITAN_ORE.get(), ModItems.RAW_TITAN.get()));
 
         this.add(ModBlocks.TIN_ORE.get(),
-                block -> createSimpleOreDrop(ModBlocks.TIN_ORE.get(), ModItems.RAW_TITAN.get()));
+                block -> createSimpleOreDrop(ModBlocks.TIN_ORE.get(), ModItems.RAW_TIN.get()));
 
     }
 
