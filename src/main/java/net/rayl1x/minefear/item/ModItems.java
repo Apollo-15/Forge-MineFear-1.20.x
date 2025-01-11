@@ -66,6 +66,10 @@ public class ModItems {
     public static final RegistryObject<Item> CANNED_RABBIT_COOKED = ITEMS.register("canned_rabbit_cooked",
             () -> new Item(new Item.Properties().food(ModFoods.CANNED_RABBIT_COOKED)));
 
+    public static final RegistryObject<Item> CHAINSAW = ITEMS.register("chainsaw",
+            () -> new Item(new Item.Properties().stacksTo(1)));
+
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

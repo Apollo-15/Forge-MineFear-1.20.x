@@ -66,6 +66,16 @@ public class ModCreativeModTabs {
                 })
                 .build());
 
+    public static final RegistryObject<CreativeModeTab> MINEFEAR_GUN_TAB = CREATIVE_MODE_TABS.register("minefear_gun_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.CHAINSAW.get( )))
+                    .title(Component.translatable("creativetab.minefear_gun_tab"))
+                    .displayItems((itemDisplayParameters, output) -> {
+
+                        output.accept(ModItems.CHAINSAW.get());
+
+                    })
+                    .build());
+
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TABS.register(eventBus);
     }
