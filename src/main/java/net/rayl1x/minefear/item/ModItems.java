@@ -1,7 +1,6 @@
 package net.rayl1x.minefear.item;
 
-import net.minecraft.world.item.AxeItem;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -68,7 +67,22 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.CANNED_RABBIT_COOKED)));
 
     public static final RegistryObject<Item> CHAINSAW = ITEMS.register("chainsaw",
-            () -> new AxeItem(ModToolTiers.CHAINSAW, 1, 1, new Item.Properties().stacksTo(1)));
+            () -> new AxeItem(ModToolTiers.CHAINSAW, 1, 0, new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> TITAN_AXE = ITEMS.register("titan_axe",
+            () -> new AxeItem(ModToolTiers.TITAN, 4, 0, new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> TITAN_PICKAXE = ITEMS.register("titan_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.TITAN, 1, 0, new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> TITAN_HOE = ITEMS.register("titan_hoe",
+            () -> new HoeItem(ModToolTiers.TITAN, 0, 0, new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> TITAN_SHOVEL = ITEMS.register("titan_shovel",
+            () -> new ShovelItem(ModToolTiers.TITAN, 6, 0, new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> TITAN_SWORD = ITEMS.register("titan_sword",
+            () -> new SwordItem(ModToolTiers.TITAN, 7, 1, new Item.Properties().stacksTo(1)));
 
 
     public static void register(IEventBus eventBus) {

@@ -17,4 +17,10 @@ public class ModToolTiers {
                     ModTags.Blocks.NEEDS_CHAINSAW, () -> Ingredient.of(ModItems.CHAINSAW.get())),
             new ResourceLocation(MineFear.MODID, "chainsaw"), List.of(Tiers.NETHERITE), List.of()
     );
+
+    public static final Tier TITAN = TierSortingRegistry.registerTier(
+            new ForgeTier(0, 972, 0.1F, 0.0F, 12,
+                    ModTags.Blocks.NEEDS_TITAN_TOOL, () -> Ingredient.of(ModItems.TITAN_INGOT.get())),
+            new ResourceLocation(MineFear.MODID, "titan_ingot"), List.of(Tiers.DIAMOND), List.of()
+    );
 }

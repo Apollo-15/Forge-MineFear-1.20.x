@@ -21,6 +21,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.TITAN_INGOT);
         simpleItem(ModItems.RAW_TITAN);
 
+        handheldItem(ModItems.TITAN_AXE);
+        handheldItem(ModItems.TITAN_HOE);
+        handheldItem(ModItems.TITAN_PICKAXE);
+        handheldItem(ModItems.TITAN_SHOVEL);
+        handheldItem(ModItems.TITAN_SWORD);
+
         simpleItem(ModItems.TIN_INGOT);
         simpleItem(ModItems.RAW_TIN);
         simpleItem(ModItems.TIN_CAN);
@@ -47,5 +53,11 @@ public class ModItemModelProvider extends ItemModelProvider {
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(MineFear.MODID, "item/" + item.getId().getPath()));
 
+    }
+
+    private ItemModelBuilder handheldItem(RegistryObject<Item> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/handheld")).texture("layer0",
+                new ResourceLocation(MineFear.MODID,"item/" + item.getId().getPath()));
     }
 }
