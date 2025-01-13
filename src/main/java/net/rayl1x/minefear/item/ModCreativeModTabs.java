@@ -66,12 +66,18 @@ public class ModCreativeModTabs {
                 })
                 .build());
 
-    public static final RegistryObject<CreativeModeTab> MINEFEAR_GUN_TAB = CREATIVE_MODE_TABS.register("minefear_gun_tab",
+    public static final RegistryObject<CreativeModeTab> MINEFEAR_TOOLS_TAB = CREATIVE_MODE_TABS.register("minefear_tools_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.CHAINSAW.get( )))
-                    .title(Component.translatable("creativetab.minefear_gun_tab"))
+                    .title(Component.translatable("creativetab.minefear_tools_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
 
                         output.accept(ModItems.CHAINSAW.get());
+
+                        output.accept(ModItems.TITAN_AXE.get());
+                        output.accept(ModItems.TITAN_HOE.get());
+                        output.accept(ModItems.TITAN_SHOVEL.get());
+                        output.accept(ModItems.TITAN_PICKAXE.get());
+                        output.accept(ModItems.TITAN_SWORD.get());
 
                     })
                     .build());
