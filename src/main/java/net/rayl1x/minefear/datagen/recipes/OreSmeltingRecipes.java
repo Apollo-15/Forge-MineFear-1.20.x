@@ -6,7 +6,6 @@ import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.level.ItemLike;
-import net.minecraftforge.registries.RegistryObject;
 import net.rayl1x.minefear.block.ModBlocks;
 import net.rayl1x.minefear.datagen.ModRecipeProvider;
 import net.rayl1x.minefear.item.ModItems;
@@ -20,9 +19,9 @@ public class OreSmeltingRecipes extends ModRecipeProvider {
     }
 
     private static final List<ItemLike> TITAN_SMELTABLE = List.of(
-            ModBlocks.TITAN_ORE.get(),
-            ModBlocks.DEEPSLATE_TITAN_ORE.get(),
-            ModItems.RAW_TITAN.get()
+            ModBlocks.TITANIUM_ORE.get(),
+            ModBlocks.DEEPSLATE_TITANIUM_ORE.get(),
+            ModItems.RAW_TITANIUM.get()
     );
 
     private static final List<ItemLike> TIN_SMELTABLE = List.of(
@@ -35,8 +34,8 @@ public class OreSmeltingRecipes extends ModRecipeProvider {
     );
 
     public static void addOreSmeltingRecipes(Consumer<FinishedRecipe> consumer) {
-        oreSmelting(consumer, TITAN_SMELTABLE, RecipeCategory.MISC, ModItems.TITAN_INGOT.get(),
-                0.9f, 230, "titan");
+        oreSmelting(consumer, TITAN_SMELTABLE, RecipeCategory.MISC, ModItems.TITANIUM_INGOT.get(),
+                0.9f, 230, "titanium");
         oreSmelting(consumer, TIN_SMELTABLE, RecipeCategory.MISC, ModItems.TIN_INGOT.get(),
                 0.7f, 200, "tin");
         oreSmelting(consumer, ITEM_SMELTABLE, RecipeCategory.MISC, ModItems.STEEL_INGOT.get(),
@@ -44,8 +43,8 @@ public class OreSmeltingRecipes extends ModRecipeProvider {
     }
 
     public static void addOreBlastingRecipes(Consumer<FinishedRecipe> consumer) {
-        oreBlasting(consumer, TITAN_SMELTABLE, RecipeCategory.MISC, ModItems.TITAN_INGOT.get(),
-                0.9f, 115, "titan");
+        oreBlasting(consumer, TITAN_SMELTABLE, RecipeCategory.MISC, ModItems.TITANIUM_INGOT.get(),
+                0.9f, 115, "titanium");
         oreBlasting(consumer, TIN_SMELTABLE, RecipeCategory.MISC, ModItems.TIN_INGOT.get(),
                 0.7f, 100, "tin");
         oreBlasting(consumer, ITEM_SMELTABLE, RecipeCategory.MISC, ModItems.STEEL_INGOT.get(),

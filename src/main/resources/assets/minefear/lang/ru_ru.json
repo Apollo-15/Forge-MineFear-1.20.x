@@ -8,14 +8,25 @@
   "item.minefear.oak_bark": "Дубовая кора",
   "item.minefear.spruce_bark": "Еловая кора",
 
-  "item.minefear.titan_ingot": "Титановый слиток",
+  "item.minefear.titanium_ingot": "Титановый слиток",
   "item.minefear.steel_ingot": "Стальной слиток",
-  "item.minefear.raw_titan": "Рудный титан",
+  "item.minefear.raw_titanium": "Рудный титан",
   "item.minefear.tin_ingot": "Оловяный слиток",
   "item.minefear.raw_tin": "Рудное олово",
   "item.minefear.tin_nugget": "Кусочек олова",
   "item.minefear.tin_plate": "Жестяная пластина",
   "item.minefear.tin_can": "Жестяная банка",
+
+  "item.minefear.titanium_sword": "Титановый меч",
+  "item.minefear.titanium_axe": "Титановый топор",
+  "item.minefear.titanium_pickaxe": "Титановая кирка",
+  "item.minefear.titanium_hoe": "Титановая мотыга",
+  "item.minefear.titanium_shovel": "Титановая лопата",
+
+  "item.minefear.titanium_helmet": "Титановый шлем",
+  "item.minefear.titanium_chestplate": "Титановый нагрудник",
+  "item.minefear.titanium_leggings": "Титановые поножи",
+  "item.minefear.titanium_boots": "Титановые ботинки",
 
   "item.minefear.canned_beef_raw": "Сырая консервированная говядина",
   "item.minefear.canned_beef_cooked": "Приготовленная консервированная говядина",
@@ -31,13 +42,17 @@
   "block.minefear.tin_ore": "Оловянная руда",
   "block.minefear.tin_block": "Блок олова",
 
-  "block.minefear.titan_ore": "Титановая руда",
-  "block.minefear.deepslate_titan_ore": "Титаноносный глубинный сланец",
-  "block.minefear.titan_block": "Блок титана",
+  "block.minefear.titanium_ore": "Титановая руда",
+  "block.minefear.deepslate_titanium_ore": "Титаноносный глубинный сланец",
+  "block.minefear.titanium_block": "Блок титана",
 
   "block.minefear.weapon_work_bench": "Оружейный Верстак",
 
+  "item.minefear.chainsaw": "Бензопила",
+
   "creativetab.minefear_blocks_tab": "Mine Fear Mod | Блоки",
   "creativetab.minefear_food_tab": "Mine Fear Mod | Еда",
-  "creativetab.minefear_ingredients_tab": "Mine Fear Mod | Ингридиенты"
+  "creativetab.minefear_ingredients_tab": "Mine Fear Mod | Ингридиенты",
+  "creativetab.minefear_tools_tab": "Mine Fear Mod | Инструменты",
+  "creativetab.minefear_armor_tab": "Mine Fear Mod | Броня"
 }

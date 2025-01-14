@@ -9,7 +9,7 @@ import net.rayl1x.minefear.MineFear;
 public class ModTags {
     public static class Blocks {
         public static final TagKey<Block> NEEDS_CHAINSAW = tag("needs_chainsaw");
-        public static final TagKey<Block> NEEDS_TITAN_TOOL = tag("needs_titan_tool");
+        public static final TagKey<Block> NEEDS_TITANIUM_TOOL = tag("needs_titanium_tool");
         public static final TagKey<Block> NEEDS_TIN_TOOL = tag("needs_tin_tool");
 
         private static TagKey<Block> tag(final String name) {

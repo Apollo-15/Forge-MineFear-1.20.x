@@ -39,14 +39,14 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        simpleItem(ModItems.TITAN_INGOT);
-        simpleItem(ModItems.RAW_TITAN);
+        simpleItem(ModItems.TITANIUM_INGOT);
+        simpleItem(ModItems.RAW_TITANIUM);
 
-        handheldItem(ModItems.TITAN_AXE);
-        handheldItem(ModItems.TITAN_HOE);
-        handheldItem(ModItems.TITAN_PICKAXE);
-        handheldItem(ModItems.TITAN_SHOVEL);
-        handheldItem(ModItems.TITAN_SWORD);
+        handheldItem(ModItems.TITANIUM_AXE);
+        handheldItem(ModItems.TITANIUM_HOE);
+        handheldItem(ModItems.TITANIUM_PICKAXE);
+        handheldItem(ModItems.TITANIUM_SHOVEL);
+        handheldItem(ModItems.TITANIUM_SWORD);
 
         simpleItem(ModItems.TIN_INGOT);
         simpleItem(ModItems.RAW_TIN);
@@ -69,10 +69,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.CANNED_PORKCHOP_COOKED);
 
 
-        trimmedArmorItem(ModItems.TITAN_HELMET);
-        trimmedArmorItem(ModItems.TITAN_CHESTPLATE);
-        trimmedArmorItem(ModItems.TITAN_LEGGINGS);
-        trimmedArmorItem(ModItems.TITAN_BOOTS);
+        trimmedArmorItem(ModItems.TITANIUM_HELMET);
+        trimmedArmorItem(ModItems.TITANIUM_CHESTPLATE);
+        trimmedArmorItem(ModItems.TITANIUM_LEGGINGS);
+        trimmedArmorItem(ModItems.TITANIUM_BOOTS);
     }
 
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {

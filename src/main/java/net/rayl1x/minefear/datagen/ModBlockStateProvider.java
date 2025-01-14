@@ -15,9 +15,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        blockWithItem(ModBlocks.TITAN_BLOCK);
-        blockWithItem(ModBlocks.TITAN_ORE);
-        blockWithItem(ModBlocks.DEEPSLATE_TITAN_ORE);
+        blockWithItem(ModBlocks.TITANIUM_BLOCK);
+        blockWithItem(ModBlocks.TITANIUM_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_TITANIUM_ORE);
         blockWithItem(ModBlocks.TIN_BLOCK);
         blockWithItem(ModBlocks.TIN_ORE);
         blockWithItem(ModBlocks.WEAPON_WORKBENCH);
