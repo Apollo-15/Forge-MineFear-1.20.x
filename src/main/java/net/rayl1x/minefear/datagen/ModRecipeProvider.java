@@ -7,10 +7,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 import net.rayl1x.minefear.MineFear;
-import net.rayl1x.minefear.datagen.recipes.CannedFoodRecieps;
-import net.rayl1x.minefear.datagen.recipes.ModBlocksRecipes;
-import net.rayl1x.minefear.datagen.recipes.ModItemsRecipes;
-import net.rayl1x.minefear.datagen.recipes.OreSmeltingRecipes;
+import net.rayl1x.minefear.datagen.recipes.*;
 
 import java.util.function.Consumer;
 
@@ -27,6 +24,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         ModItemsRecipes.addModItemsRecipes(consumer);
         ModBlocksRecipes.addModBlockRecipes(consumer);
+
+        ModToolsRecipes.addModToolsRecipes(consumer);
+
+        ModArmorRecipes.addModArmorRecipes(consumer);
 
         CannedFoodRecieps.addCannedFoodRawRecipes(consumer);
         CannedFoodRecieps.addCannedFoodCookedRecipes(consumer);
