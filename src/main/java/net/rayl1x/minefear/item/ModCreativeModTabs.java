@@ -15,13 +15,13 @@ public class ModCreativeModTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MineFear.MODID);
 
     public static final RegistryObject<CreativeModeTab> MINEFEAR_TAB_BLOCKS = CREATIVE_MODE_TABS.register("minefear_blocks_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.TITAN_BLOCK.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.TITANIUM_BLOCK.get()))
                     .title(Component.translatable("creativetab.minefear_blocks_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
 
-                        output.accept(ModBlocks.TITAN_ORE.get());
-                        output.accept(ModBlocks.DEEPSLATE_TITAN_ORE.get());
-                        output.accept(ModBlocks.TITAN_BLOCK.get());
+                        output.accept(ModBlocks.TITANIUM_ORE.get());
+                        output.accept(ModBlocks.DEEPSLATE_TITANIUM_ORE.get());
+                        output.accept(ModBlocks.TITANIUM_BLOCK.get());
 
                         output.accept(ModBlocks.TIN_ORE.get());
                         output.accept(ModBlocks.TIN_BLOCK.get());
@@ -49,12 +49,12 @@ public class ModCreativeModTabs {
                 .build());
 
     public static final RegistryObject<CreativeModeTab> MINEFEAR_INGREDIENTS_TAB = CREATIVE_MODE_TABS.register("minefear_ingredients_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.TITAN_INGOT.get( )))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.TITANIUM_INGOT.get( )))
                 .title(Component.translatable("creativetab.minefear_ingredients_tab"))
                 .displayItems((itemDisplayParameters, output) -> {
 
-                    output.accept(ModItems.TITAN_INGOT.get());
-                    output.accept(ModItems.RAW_TITAN.get());
+                    output.accept(ModItems.TITANIUM_INGOT.get());
+                    output.accept(ModItems.RAW_TITANIUM.get());
                     output.accept(ModItems.STEEL_INGOT.get());
 
                     output.accept(ModItems.TIN_INGOT.get());
@@ -73,15 +73,26 @@ public class ModCreativeModTabs {
 
                         output.accept(ModItems.CHAINSAW.get());
 
-                        output.accept(ModItems.TITAN_AXE.get());
-                        output.accept(ModItems.TITAN_HOE.get());
-                        output.accept(ModItems.TITAN_SHOVEL.get());
-                        output.accept(ModItems.TITAN_PICKAXE.get());
-                        output.accept(ModItems.TITAN_SWORD.get());
+                        output.accept(ModItems.TITANIUM_AXE.get());
+                        output.accept(ModItems.TITANIUM_HOE.get());
+                        output.accept(ModItems.TITANIUM_SHOVEL.get());
+                        output.accept(ModItems.TITANIUM_PICKAXE.get());
+                        output.accept(ModItems.TITANIUM_SWORD.get());
 
                     })
                     .build());
 
+    public static final RegistryObject<CreativeModeTab> MINEFEAR_ARMOR_TAB = CREATIVE_MODE_TABS.register("minefear_armor_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.TITANIUM_CHESTPLATE.get( )))
+                    .title(Component.translatable("creativetab.minefear_armor_tab"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModItems.TITANIUM_HELMET.get());
+                        output.accept(ModItems.TITANIUM_CHESTPLATE.get());
+                        output.accept(ModItems.TITANIUM_LEGGINGS.get());
+                        output.accept(ModItems.TITANIUM_BOOTS.get());
+
+                    })
+                    .build());
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TABS.register(eventBus);
     }

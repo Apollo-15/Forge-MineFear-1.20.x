@@ -1,6 +1,7 @@
 package net.rayl1x.minefear.item;
 
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.Tiers;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -18,9 +19,9 @@ public class ModToolTiers {
             new ResourceLocation(MineFear.MODID, "chainsaw"), List.of(Tiers.NETHERITE), List.of()
     );
 
-    public static final Tier TITAN = TierSortingRegistry.registerTier(
-            new ForgeTier(0, 972, 0.1F, 0.0F, 12,
-                    ModTags.Blocks.NEEDS_TITAN_TOOL, () -> Ingredient.of(ModItems.TITAN_INGOT.get())),
-            new ResourceLocation(MineFear.MODID, "titan_ingot"), List.of(Tiers.DIAMOND), List.of()
+    public static final Tier TITANIUM_TOOLS = TierSortingRegistry.registerTier(
+            new ForgeTier(3, 972, 8.0F, 3.0F, 10,
+                    BlockTags.NEEDS_DIAMOND_TOOL, () -> Ingredient.of(ModItems.TITANIUM_INGOT.get())),
+            new ResourceLocation(MineFear.MODID, "titanium_ingot"), List.of(Tiers.DIAMOND), List.of()
     );
 }

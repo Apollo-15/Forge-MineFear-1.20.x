@@ -21,17 +21,17 @@ public class ModBlockTagProvider extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(ModBlocks.TITAN_BLOCK.get())
-                .add(ModBlocks.TITAN_ORE.get())
-                .add(ModBlocks.DEEPSLATE_TITAN_ORE.get())
+                .add(ModBlocks.TITANIUM_BLOCK.get())
+                .add(ModBlocks.TITANIUM_ORE.get())
+                .add(ModBlocks.DEEPSLATE_TITANIUM_ORE.get())
 
                 .add(ModBlocks.TIN_BLOCK.get())
                 .add(ModBlocks.TIN_ORE.get());
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)
-                .add(ModBlocks.TITAN_BLOCK.get())
-                .add(ModBlocks.TITAN_ORE.get())
-                .add(ModBlocks.DEEPSLATE_TITAN_ORE.get());
+                .add(ModBlocks.TITANIUM_BLOCK.get())
+                .add(ModBlocks.TITANIUM_ORE.get())
+                .add(ModBlocks.DEEPSLATE_TITANIUM_ORE.get());
 
         this.tag(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.TIN_BLOCK.get())
