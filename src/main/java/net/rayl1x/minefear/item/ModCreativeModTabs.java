@@ -82,6 +82,17 @@ public class ModCreativeModTabs {
                     })
                     .build());
 
+    public static final RegistryObject<CreativeModeTab> MINEFEAR_ARMOR_TAB = CREATIVE_MODE_TABS.register("minefear_armor_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.TITAN_CHESTPLATE.get( )))
+                    .title(Component.translatable("creativetab.minefear_armor_tab"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModItems.TITAN_HELMET.get());
+                        output.accept(ModItems.TITAN_CHESTPLATE.get());
+                        output.accept(ModItems.TITAN_LEGGINGS.get());
+                        output.accept(ModItems.TITAN_BOOTS.get());
+
+                    })
+                    .build());
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TABS.register(eventBus);
     }

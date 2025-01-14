@@ -11,6 +11,8 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, MineFear.MODID);
 
+    //INGREDIENTS ITEMS
+
     public static final RegistryObject<Item> TITAN_INGOT = ITEMS.register("titan_ingot",
             () -> new Item(new Item.Properties()));
 
@@ -34,6 +36,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> TIN_CAN = ITEMS.register("tin_can",
             () -> new Item(new Item.Properties()));
+
+    //FOOD
 
     public static final RegistryObject<Item> CANNED_BEEF_RAW = ITEMS.register("canned_beef_raw",
             () -> new Item(new Item.Properties().food(ModFoods.CANNED_BEEF_RAW)));
@@ -65,6 +69,8 @@ public class ModItems {
     public static final RegistryObject<Item> CANNED_RABBIT_COOKED = ITEMS.register("canned_rabbit_cooked",
             () -> new Item(new Item.Properties().food(ModFoods.CANNED_RABBIT_COOKED)));
 
+    //TOOLS
+
     public static final RegistryObject<Item> CHAINSAW = ITEMS.register("chainsaw",
             () -> new AxeItem(ModToolTiers.CHAINSAW, 1, 0, new Item.Properties().stacksTo(1)));
 
@@ -82,6 +88,21 @@ public class ModItems {
 
     public static final RegistryObject<Item> TITAN_SWORD = ITEMS.register("titan_sword",
             () -> new SwordItem(ModToolTiers.TITAN_TOOLS, 4, -2.4f, new Item.Properties().stacksTo(1)));
+
+    //ARMOR
+
+    public static final RegistryObject<Item> TITAN_HELMET = ITEMS.register("titan_helmet",
+            () -> new ArmorItem(ModArmorMaterials.TITAN_INGOT, ArmorItem.Type.HELMET, new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> TITAN_CHESTPLATE = ITEMS.register("titan_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.TITAN_INGOT, ArmorItem.Type.CHESTPLATE, new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> TITAN_LEGGINGS = ITEMS.register("titan_leggings",
+            () -> new ArmorItem(ModArmorMaterials.TITAN_INGOT, ArmorItem.Type.LEGGINGS, new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> TITAN_BOOTS = ITEMS.register("titan_boots",
+            () -> new ArmorItem(ModArmorMaterials.TITAN_INGOT, ArmorItem.Type.BOOTS, new Item.Properties().stacksTo(1)));
+
 
 
     public static void register(IEventBus eventBus) {
