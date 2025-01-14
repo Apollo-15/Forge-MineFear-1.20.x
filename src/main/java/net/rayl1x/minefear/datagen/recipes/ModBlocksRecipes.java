@@ -16,13 +16,13 @@ public class ModBlocksRecipes extends ModRecipeProvider {
     }
 
     public static void addModBlockRecipes(Consumer<FinishedRecipe> consumer) {
-        // Titan block from titan ingots
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.TITAN_BLOCK.get())
+        // Titanium block from titanium ingots
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.TITANIUM_BLOCK.get())
                 .pattern("TTT")
                 .pattern("TTT")
                 .pattern("TTT")
-                .define('T', ModItems.TITAN_INGOT.get())
-                .unlockedBy(getHasName(ModItems.TITAN_INGOT.get()), has(ModItems.TITAN_INGOT.get()))
+                .define('T', ModItems.TITANIUM_INGOT.get())
+                .unlockedBy(getHasName(ModItems.TITANIUM_INGOT.get()), has(ModItems.TITANIUM_INGOT.get()))
                 .save(consumer);
 
         // Tin block from Tin ingots

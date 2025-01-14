@@ -13,10 +13,10 @@ public class ModItems {
 
     //INGREDIENTS ITEMS
 
-    public static final RegistryObject<Item> TITAN_INGOT = ITEMS.register("titan_ingot",
+    public static final RegistryObject<Item> TITANIUM_INGOT = ITEMS.register("titanium_ingot",
             () -> new Item(new Item.Properties()));
 
-    public static final RegistryObject<Item> RAW_TITAN = ITEMS.register("raw_titan",
+    public static final RegistryObject<Item> RAW_TITANIUM = ITEMS.register("raw_titanium",
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> STEEL_INGOT = ITEMS.register("steel_ingot",
@@ -74,34 +74,34 @@ public class ModItems {
     public static final RegistryObject<Item> CHAINSAW = ITEMS.register("chainsaw",
             () -> new AxeItem(ModToolTiers.CHAINSAW, 1, 0, new Item.Properties().stacksTo(1)));
 
-    public static final RegistryObject<Item> TITAN_AXE = ITEMS.register("titan_axe",
-            () -> new AxeItem(ModToolTiers.TITAN_TOOLS, 6f, -3.0f, new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> TITANIUM_AXE = ITEMS.register("titanium_axe",
+            () -> new AxeItem(ModToolTiers.TITANIUM_TOOLS, 6f, -3.0f, new Item.Properties().stacksTo(1)));
 
-    public static final RegistryObject<Item> TITAN_PICKAXE = ITEMS.register("titan_pickaxe",
-            () -> new PickaxeItem(ModToolTiers.TITAN_TOOLS, 2, -2.8f, new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> TITANIUM_PICKAXE = ITEMS.register("titanium_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.TITANIUM_TOOLS, 2, -2.8f, new Item.Properties().stacksTo(1)));
 
-    public static final RegistryObject<Item> TITAN_HOE = ITEMS.register("titan_hoe",
-            () -> new HoeItem(ModToolTiers.TITAN_TOOLS, -2, 0, new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> TITANIUM_HOE = ITEMS.register("titanium_hoe",
+            () -> new HoeItem(ModToolTiers.TITANIUM_TOOLS, -2, 0, new Item.Properties().stacksTo(1)));
 
-    public static final RegistryObject<Item> TITAN_SHOVEL = ITEMS.register("titan_shovel",
-            () -> new ShovelItem(ModToolTiers.TITAN_TOOLS, 2.5f, -3, new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> TITANIUM_SHOVEL = ITEMS.register("titanium_shovel",
+            () -> new ShovelItem(ModToolTiers.TITANIUM_TOOLS, 2.5f, -3, new Item.Properties().stacksTo(1)));
 
-    public static final RegistryObject<Item> TITAN_SWORD = ITEMS.register("titan_sword",
-            () -> new SwordItem(ModToolTiers.TITAN_TOOLS, 4, -2.4f, new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> TITANIUM_SWORD = ITEMS.register("titanium_sword",
+            () -> new SwordItem(ModToolTiers.TITANIUM_TOOLS, 4, -2.4f, new Item.Properties().stacksTo(1)));
 
     //ARMOR
 
-    public static final RegistryObject<Item> TITAN_HELMET = ITEMS.register("titan_helmet",
-            () -> new ArmorItem(ModArmorMaterials.TITAN_INGOT, ArmorItem.Type.HELMET, new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> TITANIUM_HELMET = ITEMS.register("titanium_helmet",
+            () -> new ArmorItem(ModArmorMaterials.TITANIUM_INGOT, ArmorItem.Type.HELMET, new Item.Properties().stacksTo(1)));
 
-    public static final RegistryObject<Item> TITAN_CHESTPLATE = ITEMS.register("titan_chestplate",
-            () -> new ArmorItem(ModArmorMaterials.TITAN_INGOT, ArmorItem.Type.CHESTPLATE, new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> TITANIUM_CHESTPLATE = ITEMS.register("titanium_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.TITANIUM_INGOT, ArmorItem.Type.CHESTPLATE, new Item.Properties().stacksTo(1)));
 
-    public static final RegistryObject<Item> TITAN_LEGGINGS = ITEMS.register("titan_leggings",
-            () -> new ArmorItem(ModArmorMaterials.TITAN_INGOT, ArmorItem.Type.LEGGINGS, new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> TITANIUM_LEGGINGS = ITEMS.register("titanium_leggings",
+            () -> new ArmorItem(ModArmorMaterials.TITANIUM_INGOT, ArmorItem.Type.LEGGINGS, new Item.Properties().stacksTo(1)));
 
-    public static final RegistryObject<Item> TITAN_BOOTS = ITEMS.register("titan_boots",
-            () -> new ArmorItem(ModArmorMaterials.TITAN_INGOT, ArmorItem.Type.BOOTS, new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> TITANIUM_BOOTS = ITEMS.register("titanium_boots",
+            () -> new ArmorItem(ModArmorMaterials.TITANIUM_INGOT, ArmorItem.Type.BOOTS, new Item.Properties().stacksTo(1)));
 
 
 

@@ -21,9 +21,9 @@ public class ModItemTagProvider extends ItemTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         this.tag(ItemTags.TRIMMABLE_ARMOR)
-                .add(ModItems.TITAN_HELMET.get())
-                .add(ModItems.TITAN_CHESTPLATE.get())
-                .add(ModItems.TITAN_LEGGINGS.get())
-                .add(ModItems.TITAN_BOOTS.get());
+                .add(ModItems.TITANIUM_HELMET.get())
+                .add(ModItems.TITANIUM_CHESTPLATE.get())
+                .add(ModItems.TITANIUM_LEGGINGS.get())
+                .add(ModItems.TITANIUM_BOOTS.get());
     }
 }

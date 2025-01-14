@@ -19,16 +19,16 @@ public class ModItemsRecipes extends ModRecipeProvider {
 
     public static void addModItemsRecipes(Consumer<FinishedRecipe> consumer) {
         // Titan ingots from Titan block
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.TITAN_INGOT.get(), 9)
-                .requires(ModBlocks.TITAN_BLOCK.get())
-                .unlockedBy(getHasName(ModBlocks.TITAN_BLOCK.get()), has(ModBlocks.TITAN_BLOCK.get()))
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.TITANIUM_INGOT.get(), 9)
+                .requires(ModBlocks.TITANIUM_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.TITANIUM_BLOCK.get()), has(ModBlocks.TITANIUM_BLOCK.get()))
                 .save(consumer);
 
         // Tin ingots from Tin block
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.TIN_INGOT.get(), 9)
                 .requires(ModBlocks.TIN_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.TIN_BLOCK.get()), has(ModBlocks.TIN_BLOCK.get()))
-                .save(consumer, MineFear.MODID + ":titan_ingot_from_block");
+                .save(consumer, MineFear.MODID + ":titanium_ingot_from_block");
 
         // Tin nuggets from tin ingot
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.TIN_NUGGET.get(), 9)
@@ -43,7 +43,7 @@ public class ModItemsRecipes extends ModRecipeProvider {
                 .pattern("NNN")
                 .define('N', ModItems.TIN_NUGGET.get())
                 .unlockedBy(getHasName(ModItems.TIN_NUGGET.get()), has(ModItems.TIN_NUGGET.get()))
-                .save(consumer, MineFear.MODID + ":titan_ingot_from_nuggets");
+                .save(consumer, MineFear.MODID + ":titanium_ingot_from_nuggets");
 
         // Tin Plate from tin nuggets and steel ingot
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.TIN_PLATE.get())

@@ -10,9 +10,9 @@ import net.rayl1x.minefear.MineFear;
 import java.util.function.Supplier;
 
 public class ModArmorMaterials implements ArmorMaterial {
-    public static final ModArmorMaterials TITAN_INGOT = new ModArmorMaterials(
-            "titan", 26, new int[]{5, 7, 5, 4}, 25,
-            SoundEvents.ARMOR_EQUIP_GOLD, 1f, 0f, () -> Ingredient.of(ModItems.TITAN_INGOT.get())
+    public static final ModArmorMaterials TITANIUM_INGOT = new ModArmorMaterials(
+            "titanium", 26, new int[]{5, 7, 5, 4}, 25,
+            SoundEvents.ARMOR_EQUIP_GOLD, 1f, 0f, () -> Ingredient.of(ModItems.TITANIUM_INGOT.get())
     );
 
     private final String name;

@@ -23,16 +23,16 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
-        this.dropSelf(ModBlocks.TITAN_BLOCK.get());
+        this.dropSelf(ModBlocks.TITANIUM_BLOCK.get());
         this.dropSelf(ModBlocks.TIN_BLOCK.get());
 
         this.dropSelf(ModBlocks.WEAPON_WORKBENCH.get());
 
-        this.add(ModBlocks.TITAN_ORE.get(),
-                block -> createSimpleOreDrop(ModBlocks.TITAN_ORE.get(), ModItems.RAW_TITAN.get()));
+        this.add(ModBlocks.TITANIUM_ORE.get(),
+                block -> createSimpleOreDrop(ModBlocks.TITANIUM_ORE.get(), ModItems.RAW_TITANIUM.get()));
 
-        this.add(ModBlocks.DEEPSLATE_TITAN_ORE.get(),
-                block -> createSimpleOreDrop(ModBlocks.TITAN_ORE.get(), ModItems.RAW_TITAN.get()));
+        this.add(ModBlocks.DEEPSLATE_TITANIUM_ORE.get(),
+                block -> createSimpleOreDrop(ModBlocks.TITANIUM_ORE.get(), ModItems.RAW_TITANIUM.get()));
 
         this.add(ModBlocks.TIN_ORE.get(),
                 block -> createSimpleOreDrop(ModBlocks.TIN_ORE.get(), ModItems.RAW_TIN.get()));

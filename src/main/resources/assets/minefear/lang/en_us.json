@@ -8,14 +8,25 @@
   "item.minefear.oak_bark": "Oak bark",
   "item.minefear.spruce_bark": "Spruce bark",
 
-  "item.minefear.titan_ingot": "Titan ingot",
-  "item.minefear.steel_ingot": "Steel ingot",
-  "item.minefear.raw_titan": "Raw titan",
+  "item.minefear.titanium_ingot": "Titanium ingot",
+  "item.minefear.steel_ingot": "Steel  ingot",
+  "item.minefear.raw_titanium": "Raw titanium",
   "item.minefear.tin_ingot": "Tin ingot",
   "item.minefear.raw_tin": "Raw tin",
   "item.minefear.tin_nugget": "Tin nugget",
   "item.minefear.tin_plate": "Tin plate",
   "item.minefear.tin_can": "Tin can",
+
+  "item.minefear.titanium_sword": "Titanium sword",
+  "item.minefear.titanium_axe": "Titanium axe",
+  "item.minefear.titanium_pickaxe": "Titanium pickaxe",
+  "item.minefear.titanium_hoe": "Titanium hoe",
+  "item.minefear.titanium_shovel": "Titanium shovel",
+
+  "item.minefear.titanium_helmet": "Titanium helmet",
+  "item.minefear.titanium_chestplate": "Titanium chestplate",
+  "item.minefear.titanium_leggings": "Titanium leggings",
+  "item.minefear.titanium_boots": "Titanium boots",
 
   "item.minefear.canned_beef_raw": "Raw canned beef",
   "item.minefear.canned_beef_cooked": "Cooked canned beef",
@@ -31,12 +42,17 @@
   "block.minefear.tin_ore": "Tin ore",
   "block.minefear.tin_block": "Block of tin",
 
-  "block.minefear.titan_ore": "Titan ore",
-  "block.minefear.deepslate_titan_ore": "Deepslate titan ore",
-  "block.minefear.titan_block": "Block of titan",
+  "block.minefear.titanium_ore": "Titanium ore",
+  "block.minefear.deepslate_titanium_ore": "Deepslate titanium ore",
+  "block.minefear.titanium_block": "Block of titanium",
+
   "block.minefear.weapon_work_bench": "Weapon workbench",
+
+  "item.minefear.chainsaw": "Chainsaw",
 
   "creativetab.minefear_blocks_tab": "Mine Fear Mod | Blocks",
   "creativetab.minefear_food_tab": "Mine Fear Mod | Food",
-  "creativetab.minefear_ingredients_tab": "Mine Fear Mod | Ingredients"
+  "creativetab.minefear_ingredients_tab": "Mine Fear Mod | Ingredients",
+  "creativetab.minefear_tools_tab": "Mine Fear Mod | Tools",
+  "creativetab.minefear_armor_tab": "Mine Fear Mod | Armor"
 }
