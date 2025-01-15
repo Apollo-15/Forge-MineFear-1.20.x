@@ -89,6 +89,22 @@ public class ModItems {
     public static final RegistryObject<Item> TITANIUM_SWORD = ITEMS.register("titanium_sword",
             () -> new SwordItem(ModToolTiers.TITANIUM_TOOLS, 4, -2.4f, new Item.Properties().stacksTo(1)));
 
+
+    public static final RegistryObject<Item> TIN_AXE = ITEMS.register("tin_axe",
+            () -> new AxeItem(ModToolTiers.TIN_TOOLS, 6, -3.1f, new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> TIN_PICKAXE = ITEMS.register("tin_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.TIN_TOOLS, 1, -2.8f, new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> TIN_HOE = ITEMS.register("tin_hoe",
+            () -> new HoeItem(ModToolTiers.TIN_TOOLS, -2, -1, new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> TIN_SHOVEL = ITEMS.register("tin_shovel",
+            () -> new ShovelItem(ModToolTiers.TIN_TOOLS, 1.5f, -3, new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> TIN_SWORD = ITEMS.register("tin_sword",
+            () -> new SwordItem(ModToolTiers.TIN_TOOLS, 3, -2.4f, new Item.Properties().stacksTo(1)));
+
     //ARMOR
 
     public static final RegistryObject<Item> TITANIUM_HELMET = ITEMS.register("titanium_helmet",
