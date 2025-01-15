@@ -15,6 +15,11 @@ public class ModArmorMaterials implements ArmorMaterial {
             SoundEvents.ARMOR_EQUIP_GOLD, 1f, 0f, () -> Ingredient.of(ModItems.TITANIUM_INGOT.get())
     );
 
+    public static final ModArmorMaterials TIN_INGOT = new ModArmorMaterials(
+            "tin", 15, new int[]{5, 7, 5, 4}, 17,
+            SoundEvents.ARMOR_EQUIP_IRON, 1f, 0f, () -> Ingredient.of(ModItems.TIN_INGOT.get())
+    );
+
     private final String name;
     private final int durabilityMultiplier;
     private final int[] protectionAmounts;

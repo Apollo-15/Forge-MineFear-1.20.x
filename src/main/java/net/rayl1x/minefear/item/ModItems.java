@@ -104,6 +104,21 @@ public class ModItems {
             () -> new ArmorItem(ModArmorMaterials.TITANIUM_INGOT, ArmorItem.Type.BOOTS, new Item.Properties().stacksTo(1)));
 
 
+    public static final RegistryObject<Item> TIN_HELMET = ITEMS.register("tin_helmet",
+            () -> new ArmorItem(ModArmorMaterials.TIN_INGOT, ArmorItem.Type.HELMET, new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> TIN_CHESTPLATE = ITEMS.register("tin_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.TIN_INGOT, ArmorItem.Type.CHESTPLATE, new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> TIN_LEGGINGS = ITEMS.register("tin_leggings",
+            () -> new ArmorItem(ModArmorMaterials.TIN_INGOT, ArmorItem.Type.LEGGINGS, new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> TIN_BOOTS = ITEMS.register("tin_boots",
+            () -> new ArmorItem(ModArmorMaterials.TIN_INGOT, ArmorItem.Type.BOOTS, new Item.Properties().stacksTo(1)));
+
+
+
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

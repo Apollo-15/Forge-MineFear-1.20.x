@@ -73,6 +73,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.TITANIUM_CHESTPLATE);
         trimmedArmorItem(ModItems.TITANIUM_LEGGINGS);
         trimmedArmorItem(ModItems.TITANIUM_BOOTS);
+
+        trimmedArmorItem(ModItems.TIN_HELMET);
+        trimmedArmorItem(ModItems.TIN_CHESTPLATE);
+        trimmedArmorItem(ModItems.TIN_LEGGINGS);
+        trimmedArmorItem(ModItems.TIN_BOOTS);
     }
 
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {

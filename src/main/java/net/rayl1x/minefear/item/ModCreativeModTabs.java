@@ -91,6 +91,10 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.TITANIUM_LEGGINGS.get());
                         output.accept(ModItems.TITANIUM_BOOTS.get());
 
+                        output.accept(ModItems.TIN_HELMET.get());
+                        output.accept(ModItems.TIN_CHESTPLATE.get());
+                        output.accept(ModItems.TIN_LEGGINGS.get());
+                        output.accept(ModItems.TIN_BOOTS.get());
                     })
                     .build());
     public static void register(IEventBus eventBus) {
