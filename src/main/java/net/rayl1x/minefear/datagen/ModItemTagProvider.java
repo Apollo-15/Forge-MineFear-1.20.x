@@ -24,6 +24,11 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.TITANIUM_HELMET.get())
                 .add(ModItems.TITANIUM_CHESTPLATE.get())
                 .add(ModItems.TITANIUM_LEGGINGS.get())
-                .add(ModItems.TITANIUM_BOOTS.get());
+                .add(ModItems.TITANIUM_BOOTS.get())
+
+                .add(ModItems.TIN_HELMET.get())
+                .add(ModItems.TIN_CHESTPLATE.get())
+                .add(ModItems.TIN_LEGGINGS.get())
+                .add(ModItems.TIN_BOOTS.get());
     }
 }

@@ -79,6 +79,12 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.TITANIUM_PICKAXE.get());
                         output.accept(ModItems.TITANIUM_SWORD.get());
 
+                        output.accept(ModItems.TIN_AXE.get());
+                        output.accept(ModItems.TIN_HOE.get());
+                        output.accept(ModItems.TIN_SHOVEL.get());
+                        output.accept(ModItems.TIN_PICKAXE.get());
+                        output.accept(ModItems.TIN_SWORD.get());
+
                     })
                     .build());
 
@@ -91,6 +97,10 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.TITANIUM_LEGGINGS.get());
                         output.accept(ModItems.TITANIUM_BOOTS.get());
 
+                        output.accept(ModItems.TIN_HELMET.get());
+                        output.accept(ModItems.TIN_CHESTPLATE.get());
+                        output.accept(ModItems.TIN_LEGGINGS.get());
+                        output.accept(ModItems.TIN_BOOTS.get());
                     })
                     .build());
     public static void register(IEventBus eventBus) {

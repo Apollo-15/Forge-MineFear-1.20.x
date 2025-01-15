@@ -25,9 +25,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ModItemsRecipes.addModItemsRecipes(consumer);
         ModBlocksRecipes.addModBlockRecipes(consumer);
 
-        ModToolsRecipes.addModToolsRecipes(consumer);
+        ModToolsRecipes.addModTitaniumToolsRecipes(consumer);
+        ModToolsRecipes.addModTinToolsRecipes(consumer);
 
-        ModArmorRecipes.addModArmorRecipes(consumer);
+        ModArmorRecipes.addModTitaniumArmorRecipes(consumer);
+        ModArmorRecipes.addModTinArmorRecipes(consumer);
 
         CannedFoodRecieps.addCannedFoodRawRecipes(consumer);
         CannedFoodRecieps.addCannedFoodCookedRecipes(consumer);

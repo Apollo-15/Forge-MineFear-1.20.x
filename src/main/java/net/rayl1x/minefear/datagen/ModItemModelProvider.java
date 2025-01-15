@@ -54,6 +54,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.TIN_NUGGET);
         simpleItem(ModItems.TIN_PLATE);
 
+        handheldItem(ModItems.TIN_AXE);
+        handheldItem(ModItems.TIN_HOE);
+        handheldItem(ModItems.TIN_PICKAXE);
+        handheldItem(ModItems.TIN_SHOVEL);
+        handheldItem(ModItems.TIN_SWORD);
+
         simpleItem(ModItems.STEEL_INGOT);
 
         simpleItem(ModItems.CANNED_BEEF_RAW);
@@ -73,6 +79,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.TITANIUM_CHESTPLATE);
         trimmedArmorItem(ModItems.TITANIUM_LEGGINGS);
         trimmedArmorItem(ModItems.TITANIUM_BOOTS);
+
+        trimmedArmorItem(ModItems.TIN_HELMET);
+        trimmedArmorItem(ModItems.TIN_CHESTPLATE);
+        trimmedArmorItem(ModItems.TIN_LEGGINGS);
+        trimmedArmorItem(ModItems.TIN_BOOTS);
     }
 
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {
