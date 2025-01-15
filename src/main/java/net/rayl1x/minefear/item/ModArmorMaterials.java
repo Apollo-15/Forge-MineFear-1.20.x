@@ -11,13 +11,13 @@ import java.util.function.Supplier;
 
 public class ModArmorMaterials implements ArmorMaterial {
     public static final ModArmorMaterials TITANIUM_INGOT = new ModArmorMaterials(
-            "titanium", 26, new int[]{5, 7, 5, 4}, 25,
-            SoundEvents.ARMOR_EQUIP_GOLD, 1f, 0f, () -> Ingredient.of(ModItems.TITANIUM_INGOT.get())
+            "titanium", 26, new int[]{4, 9, 7, 4}, 25,
+            SoundEvents.ARMOR_EQUIP_DIAMOND, 2f, 0f, () -> Ingredient.of(ModItems.TITANIUM_INGOT.get())
     );
 
     public static final ModArmorMaterials TIN_INGOT = new ModArmorMaterials(
-            "tin", 15, new int[]{5, 7, 5, 4}, 17,
-            SoundEvents.ARMOR_EQUIP_IRON, 1f, 0f, () -> Ingredient.of(ModItems.TIN_INGOT.get())
+            "tin", 13, new int[]{2, 6, 5, 2}, 17,
+            SoundEvents.ARMOR_EQUIP_IRON, 0f, 0f, () -> Ingredient.of(ModItems.TIN_INGOT.get())
     );
 
     private final String name;
