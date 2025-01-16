@@ -13,14 +13,15 @@ import net.rayl1x.minefear.MineFear;
 import net.rayl1x.minefear.item.ModItems;
 
 import java.util.List;
+import java.util.Random;
 
 @Mod.EventBusSubscriber(modid = MineFear.MODID)
 public class ModEvents {
 
     @SubscribeEvent
     public static void addCustomTrade(VillagerTradesEvent event) {
-
-        if (event.getType() == VillagerProfession.ARMORER) {
+    Random random = new Random();
+        if(event.getType() == VillagerProfession.ARMORER) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
 
             // Level 1 - Tin armor
@@ -68,32 +69,29 @@ public class ModEvents {
                     3, 8, 0.02f));
         }
 
-            // Level 2: Tin tools
-
-        if (event.getType() == VillagerProfession.TOOLSMITH) {
+        if(event.getType() == VillagerProfession.TOOLSMITH) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
 
+            // Level 1: Tin weapons and tools
 
-            trades.get(2).add((pTrader, randomSource) -> new MerchantOffer(
-                    new ItemStack(Items.EMERALD, 5 + randomSource.nextInt(11)),
-                    new ItemStack(ModItems.TIN_PICKAXE.get(), 1),
-                    5, 10, 0.05f));
-
-            // Tin Axe: 4-14 emeralds
-            trades.get(2).add((pTrader, randomSource) -> new MerchantOffer(
-                    new ItemStack(Items.EMERALD, 4 + randomSource.nextInt(11)),
+            trades.get(1).add((entity, randomSource) -> new MerchantOffer(
+                    new ItemStack(Items.EMERALD, 4),
                     new ItemStack(ModItems.TIN_AXE.get(), 1),
                     5, 10, 0.05f));
 
-            // Tin Shovel: 5-15 emeralds
-            trades.get(2).add((pTrader, randomSource) -> new MerchantOffer(
-                    new ItemStack(Items.EMERALD, 5 + randomSource.nextInt(11)),
+            trades.get(1).add((entity, randomSource) -> new MerchantOffer(
+                    new ItemStack(Items.EMERALD, 3),
                     new ItemStack(ModItems.TIN_SHOVEL.get(), 1),
                     5, 10, 0.05f));
 
-            // Tin Hoe: 3-12 emeralds
-            trades.get(2).add((pTrader, randomSource) -> new MerchantOffer(
-                    new ItemStack(Items.EMERALD, 3 + randomSource.nextInt(10)),
+            trades.get(1).add((entity, randomSource) -> new MerchantOffer(
+                    new ItemStack(Items.EMERALD, 5),
+                    new ItemStack(ModItems.TIN_PICKAXE.get(), 1),
+                    5, 10, 0.05f));
+
+            int tin_hoe = 3 + random.nextInt(10);
+            trades.get(1).add((entity, randomSource) ->  new MerchantOffer(
+                    new ItemStack(Items.EMERALD, tin_hoe),
                     new ItemStack(ModItems.TIN_HOE.get(), 1),
                     5, 10, 0.05f));
         }
