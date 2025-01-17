@@ -20,7 +20,9 @@ public class ModEvents {
 
     @SubscribeEvent
     public static void addCustomTrade(VillagerTradesEvent event) {
-    Random random = new Random();
+
+        // ARMORER
+
         if(event.getType() == VillagerProfession.ARMORER) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
 
@@ -42,58 +44,97 @@ public class ModEvents {
                     5, 10, 0.05f));
 
             trades.get(1).add((entity, randomSource) -> new MerchantOffer(
-                    new ItemStack(Items.EMERALD, 3),
+                    new ItemStack(Items.EMERALD, 2),
                     new ItemStack(ModItems.TIN_BOOTS.get(), 1),
                     5, 10, 0.05f));
 
             // Level 4 - Titanium armor
 
-            trades.get(4).add((entity, randomSource) -> new MerchantOffer(
-                    new ItemStack(Items.EMERALD, 32),
-                    new ItemStack(ModItems.TITANIUM_HELMET.get(), 1),
-                    3, 8, 0.02f));
+            trades.get(4).add((entity, randomSource) -> {
+                int titanium_helmet_cost = 30 + randomSource.nextInt(11);
+                return new MerchantOffer(
+                        new ItemStack(Items.EMERALD, titanium_helmet_cost),
+                        new ItemStack(ModItems.TITANIUM_HELMET.get(), 1),
+                        3, 8, 0.02f);
+            });
 
-            trades.get(4).add((entity, randomSource) -> new MerchantOffer(
-                    new ItemStack(Items.EMERALD, 48),
-                    new ItemStack(ModItems.TITANIUM_CHESTPLATE.get(), 1),
-                    3, 8, 0.02f));
+            trades.get(4).add((entity, randomSource) -> {
+                int titanium_chestplate_cost = 42 + randomSource.nextInt(10);
+                return new MerchantOffer(
+                        new ItemStack(Items.EMERALD, titanium_chestplate_cost),
+                        new ItemStack(ModItems.TITANIUM_CHESTPLATE.get(), 1),
+                        3, 8, 0.02f);
+            });
 
-            trades.get(4).add((entity, randomSource) -> new MerchantOffer(
-                    new ItemStack(Items.EMERALD, 42),
-                    new ItemStack(ModItems.TITANIUM_LEGGINGS.get(), 1),
-                    3, 8, 0.02f));
+            trades.get(4).add((entity, randomSource) -> {
+                int titanium_leggings_cost = 37 + randomSource.nextInt(10);
+                return new MerchantOffer(
+                        new ItemStack(Items.EMERALD, titanium_leggings_cost),
+                        new ItemStack(ModItems.TITANIUM_LEGGINGS.get(), 1),
+                        3, 8, 0.02f);
+            });
 
-            trades.get(4).add((entity, randomSource) -> new MerchantOffer(
-                    new ItemStack(Items.EMERALD, 29),
-                    new ItemStack(ModItems.TITANIUM_BOOTS.get(), 1),
-                    3, 8, 0.02f));
+            trades.get(4).add((entity, randomSource) -> {
+                int titanium_boots_cost = 26 + randomSource.nextInt(10);
+                return new MerchantOffer(
+                        new ItemStack(Items.EMERALD, titanium_boots_cost),
+                        new ItemStack(ModItems.TITANIUM_BOOTS.get(), 1),
+                        3, 8, 0.02f);
+            });
         }
+
+        //TOOLSMITH
 
         if(event.getType() == VillagerProfession.TOOLSMITH) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
 
-            // Level 1: Tin weapons and tools
+            // Level 1: Tin tools
 
-            trades.get(1).add((entity, randomSource) -> new MerchantOffer(
-                    new ItemStack(Items.EMERALD, 4),
+            // Tin Axe
+
+            trades.get(1).add((entity, randomSource) -> {
+                int tin_axe_cost = 4 + randomSource.nextInt(11);
+                return new MerchantOffer(
+                    new ItemStack(Items.EMERALD, tin_axe_cost),
                     new ItemStack(ModItems.TIN_AXE.get(), 1),
-                    5, 10, 0.05f));
+                    5, 10, 0.05f);
+            });
 
-            trades.get(1).add((entity, randomSource) -> new MerchantOffer(
-                    new ItemStack(Items.EMERALD, 3),
-                    new ItemStack(ModItems.TIN_SHOVEL.get(), 1),
-                    5, 10, 0.05f));
+            // Tin shovel
 
-            trades.get(1).add((entity, randomSource) -> new MerchantOffer(
-                    new ItemStack(Items.EMERALD, 5),
-                    new ItemStack(ModItems.TIN_PICKAXE.get(), 1),
-                    5, 10, 0.05f));
+            trades.get(1).add((entity, randomSource) -> {
+                int tin_shovel_cost = 5 + randomSource.nextInt(11);
+                return new MerchantOffer(
+                        new ItemStack(Items.EMERALD, tin_shovel_cost),
+                        new ItemStack(ModItems.TIN_SHOVEL.get(), 1),
+                        5, 10, 0.05f);
+            });
 
-            int tin_hoe = 3 + random.nextInt(10);
-            trades.get(1).add((entity, randomSource) ->  new MerchantOffer(
-                    new ItemStack(Items.EMERALD, tin_hoe),
-                    new ItemStack(ModItems.TIN_HOE.get(), 1),
-                    5, 10, 0.05f));
+            // Tin pickaxe
+
+            trades.get(1).add((entity, randomSource) -> {
+                int tin_pickaxe_cost = 5 + randomSource.nextInt(11);
+                return new MerchantOffer(
+                        new ItemStack(Items.EMERALD, tin_pickaxe_cost),
+                        new ItemStack(ModItems.TIN_PICKAXE.get(), 1),
+                        5, 10, 0.05f);
+            });
+
+            // Tin Hoe
+
+            trades.get(1).add((entity, randomSource) -> {
+                int tin_hoe_cost = 3 + randomSource.nextInt(10);
+                return new MerchantOffer(
+                        new ItemStack(Items.EMERALD, tin_hoe_cost),
+                        new ItemStack(ModItems.TIN_HOE.get(), 1),
+                        5, 10, 0.05f);
+            });
+        }
+
+        //WEAPONSMITH
+
+        if(event.getType() == VillagerProfession.WEAPONSMITH) {
+            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
         }
     }
 }
