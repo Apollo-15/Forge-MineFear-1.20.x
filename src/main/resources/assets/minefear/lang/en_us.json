@@ -1,13 +1,4 @@
 {
-  "item.minefear.acacia_bark": "Acacia bark",
-  "item.minefear.birch_bark": "Birch bark",
-  "item.minefear.cherry_bark": "Cherry bark",
-  "item.minefear.dark_oak_bark": "Dark oak bark",
-  "item.minefear.jungle_bark": "Jungle bark",
-  "item.minefear.mangrove_bark": "Mangrove bark",
-  "item.minefear.oak_bark": "Oak bark",
-  "item.minefear.spruce_bark": "Spruce bark",
-
   "item.minefear.titanium_ingot": "Titanium ingot",
   "item.minefear.steel_ingot": "Steel  ingot",
   "item.minefear.raw_titanium": "Raw titanium",
@@ -58,6 +49,7 @@
   "block.minefear.titanium_block": "Block of titanium",
 
   "block.minefear.weapon_work_bench": "Weapon workbench",
+  "block.minefear.ancient_table_of_knowledge": "Ancient table of knowledge",
 
   "item.minefear.chainsaw": "Chainsaw",
 

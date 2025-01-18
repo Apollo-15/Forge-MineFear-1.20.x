@@ -27,6 +27,8 @@ public class ModCreativeModTabs {
                         output.accept(ModBlocks.TIN_BLOCK.get());
 
                         output.accept(ModBlocks.WEAPON_WORKBENCH.get());
+                        output.accept(ModBlocks.ANCIENT_TABLE_OF_KNOWLEDGE.get());
+
                     })
                     .build());
 

@@ -10,6 +10,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.rayl1x.minefear.MineFear;
+import net.rayl1x.minefear.block.custom.AncientTableOfKnowledge;
 import net.rayl1x.minefear.block.custom.WeaponWorkbench;
 import net.rayl1x.minefear.item.ModItems;
 
@@ -36,6 +37,10 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> WEAPON_WORKBENCH = registerBlock("weapon_work_bench",
             () -> new WeaponWorkbench(BlockBehaviour.Properties.copy(Blocks.CRAFTING_TABLE)));
+
+    public static final RegistryObject<Block> ANCIENT_TABLE_OF_KNOWLEDGE = registerBlock("ancient_table_of_knowledge",
+            () -> new AncientTableOfKnowledge(BlockBehaviour.Properties.copy(Blocks.ENCHANTING_TABLE)));
+
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
