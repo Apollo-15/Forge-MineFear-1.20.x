@@ -18,11 +18,11 @@ import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.phys.BlockHitResult;
 
-public class AncientTable extends Block {
+public class AncientTableOfKnowledge extends Block {
 
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
 
-    public AncientTable(BlockBehaviour.Properties pProperties) {
+    public AncientTableOfKnowledge(BlockBehaviour.Properties pProperties) {
         super(pProperties);
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
     }

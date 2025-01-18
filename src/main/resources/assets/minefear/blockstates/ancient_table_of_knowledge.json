@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "minefear:block/ancient_table_of_knowledge", "y": 0 },
+    "facing=east": { "model": "minefear:block/ancient_table_of_knowledge", "y": 90 },
+    "facing=south": { "model": "minefear:block/ancient_table_of_knowledge", "y": 180 },
+    "facing=west": { "model": "minefear:block/ancient_table_of_knowledge", "y": 270 }
+  }
+}
