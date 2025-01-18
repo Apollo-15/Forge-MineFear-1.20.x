@@ -1,8 +1,0 @@
-{
-  "variants": {
-    "facing=north": { "model": "minefear:block/ancient_table", "y": 0 },
-    "facing=east": { "model": "minefear:block/ancient_table", "y": 90 },
-    "facing=south": { "model": "minefear:block/ancient_table", "y": 180 },
-    "facing=west": { "model": "minefear:block/ancient_table", "y": 270 }
-  }
-}

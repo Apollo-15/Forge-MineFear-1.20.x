@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [128, 128],
 	"textures": {
-		"0": "minefear:block/ancient_table",
-		"particle": "minefear:block/ancient_table"
+		"0": "minefear:block/ancient_table_of_knowledge",
+		"particle": "minefear:block/ancient_table_of_knowledge"
 	},
 	"elements": [
 		{
