@@ -27,6 +27,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.TIN_BLOCK.get());
 
         this.dropSelf(ModBlocks.WEAPON_WORKBENCH.get());
+        this.dropSelf(ModBlocks.ANCIENT_TABLE_OF_KNOWLEDGE.get());
+
 
         this.add(ModBlocks.TITANIUM_ORE.get(),
                 block -> createSimpleOreDrop(ModBlocks.TITANIUM_ORE.get(), ModItems.RAW_TITANIUM.get()));

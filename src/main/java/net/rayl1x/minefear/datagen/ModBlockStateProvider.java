@@ -21,6 +21,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.TIN_BLOCK);
         blockWithItem(ModBlocks.TIN_ORE);
         blockWithItem(ModBlocks.WEAPON_WORKBENCH);
+        blockWithItem(ModBlocks.ANCIENT_TABLE_OF_KNOWLEDGE);
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
