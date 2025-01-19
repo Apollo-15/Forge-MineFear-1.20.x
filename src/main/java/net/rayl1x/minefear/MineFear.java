@@ -15,6 +15,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.rayl1x.minefear.block.ModBlocks;
 import net.rayl1x.minefear.item.ModCreativeModTabs;
 import net.rayl1x.minefear.item.ModItems;
+import net.rayl1x.minefear.villiger.ModVillagers;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -30,6 +31,8 @@ public class MineFear {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModVillagers.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

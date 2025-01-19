@@ -49,7 +49,10 @@
   "block.minefear.titanium_block": "Block of titanium",
 
   "block.minefear.weapon_work_bench": "Weapon workbench",
+
+
   "block.minefear.ancient_table_of_knowledge": "Ancient table of knowledge",
+  "entity.minecraft.villager.minefear.keeper_of_knowledge" : "Keeper of Knowledge",
 
   "item.minefear.chainsaw": "Chainsaw",
 
