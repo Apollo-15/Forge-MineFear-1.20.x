@@ -69,6 +69,18 @@ public class ModItems {
     public static final RegistryObject<Item> CANNED_RABBIT_COOKED = ITEMS.register("canned_rabbit_cooked",
             () -> new Item(new Item.Properties().food(ModFoods.CANNED_RABBIT_COOKED)));
 
+    //WEAPONS
+
+    public static final RegistryObject<Item> TITANIUM_SWORD = ITEMS.register("titanium_sword",
+            () -> new SwordItem(ModToolTiers.TITANIUM_TOOLS, 4, -2.4f, new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> TIN_SWORD = ITEMS.register("tin_sword",
+            () -> new SwordItem(ModToolTiers.TIN_TOOLS, 3, -2.4f, new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> KNIGHTS_SWORD = ITEMS.register("knights_sword",
+            () -> new SwordItem(ModToolTiers.KNIGHTS_SWORD, 7, -2.4f, new Item.Properties().stacksTo(1)));
+
+
     //TOOLS
 
     public static final RegistryObject<Item> CHAINSAW = ITEMS.register("chainsaw",
@@ -86,8 +98,6 @@ public class ModItems {
     public static final RegistryObject<Item> TITANIUM_SHOVEL = ITEMS.register("titanium_shovel",
             () -> new ShovelItem(ModToolTiers.TITANIUM_TOOLS, 2.5f, -3, new Item.Properties().stacksTo(1)));
 
-    public static final RegistryObject<Item> TITANIUM_SWORD = ITEMS.register("titanium_sword",
-            () -> new SwordItem(ModToolTiers.TITANIUM_TOOLS, 4, -2.4f, new Item.Properties().stacksTo(1)));
 
 
     public static final RegistryObject<Item> TIN_AXE = ITEMS.register("tin_axe",
@@ -102,8 +112,6 @@ public class ModItems {
     public static final RegistryObject<Item> TIN_SHOVEL = ITEMS.register("tin_shovel",
             () -> new ShovelItem(ModToolTiers.TIN_TOOLS, 1.5f, -3, new Item.Properties().stacksTo(1)));
 
-    public static final RegistryObject<Item> TIN_SWORD = ITEMS.register("tin_sword",
-            () -> new SwordItem(ModToolTiers.TIN_TOOLS, 3, -2.4f, new Item.Properties().stacksTo(1)));
 
     //ARMOR
 
