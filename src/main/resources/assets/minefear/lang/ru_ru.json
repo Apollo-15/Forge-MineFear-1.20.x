@@ -49,12 +49,12 @@
   "block.minefear.titanium_block": "Блок титана",
 
   "block.minefear.weapon_work_bench": "Оружейный Верстак",
-
-
   "block.minefear.ancient_table_of_knowledge": "Древний стол знаний",
+
   "entity.minecraft.villager.minefear.keeper_of_knowledge" : "Хранитель знаний",
 
   "item.minefear.chainsaw": "Бензопила",
+  "item.minefear.knights_sword": "Меч рыцаря",
 
   "creativetab.minefear_blocks_tab": "Mine Fear Mod | Блоки",
   "creativetab.minefear_food_tab": "Mine Fear Mod | Еда",
