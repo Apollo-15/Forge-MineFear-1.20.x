@@ -1,7 +1,7 @@
 package net.rayl1x.minefear;
 
 import com.mojang.logging.LogUtils;
-import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -13,6 +13,8 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.rayl1x.minefear.block.ModBlocks;
+import net.rayl1x.minefear.entity.ModEntities;
+import net.rayl1x.minefear.entity.client.KnightRenderer;
 import net.rayl1x.minefear.item.ModCreativeModTabs;
 import net.rayl1x.minefear.item.ModItems;
 import net.rayl1x.minefear.villiger.ModVillagers;
@@ -33,6 +35,8 @@ public class MineFear {
         ModBlocks.register(modEventBus);
 
         ModVillagers.register(modEventBus);
+
+        ModEntities.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -70,6 +74,7 @@ public class MineFear {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+            EntityRenderers.register(ModEntities.KNIGHT.get(), KnightRenderer::new);
         }
     }
 }
