@@ -1,7 +1,9 @@
 package net.rayl1x.minefear.entity.custom;
 
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.world.entity.AnimationState;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.Pose;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.*;
@@ -15,6 +17,45 @@ public class KnightEntity extends Monster {
 
     public KnightEntity(EntityType<? extends Monster> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
+    }
+
+    public final AnimationState idleAnimationState = new AnimationState();
+    private int idleAnimationTimeout = 0;
+    @Override
+    public void tick() {
+        super.tick();
+
+        if(this.level().isClientSide()) {
+            setupAnimationState();
+        }
+
+        // If the player is looking at the mob, it starts moving towards the player
+        if (this.isLookingAtPlayer()) {
+            this.setAggressive(true);  // The mob becomes aggressive
+        } else {
+            this.setAggressive(false);  // The mob is not aggressive if not being watched
+        }
+    }
+
+    private void setupAnimationState() {
+        if (this.idleAnimationTimeout <= 0) {
+            this.idleAnimationTimeout = this.random.nextInt(40) + 80;
+            this.idleAnimationState.start(this.tickCount);
+        } else {
+            --this.idleAnimationTimeout;
+        }
+    }
+
+    @Override
+    protected void updateWalkAnimation(float pPartialTick) {
+        float f;
+        if(this.getPose() == Pose.STANDING) {
+            f = Math.min(pPartialTick * 6f, 1f);
+        } else {
+            f = 0f;
+        }
+
+        this.walkAnimation.update(f, 0.2f);
     }
 
     @Override
@@ -31,16 +72,6 @@ public class KnightEntity extends Monster {
         this.goalSelector.addGoal(4, new MeleeAttackGoal(this, 1.0D, true));
     }
 
-    @Override
-    public void tick() {
-        super.tick();
-        // If the player is looking at the mob, it starts moving towards the player
-        if (this.isLookingAtPlayer()) {
-            this.setAggressive(true);  // The mob becomes aggressive
-        } else {
-            this.setAggressive(false);  // The mob is not aggressive if not being watched
-        }
-    }
 
     // Проверка, смотрит ли игрок на моба
     private boolean isLookingAtPlayer() {

@@ -10,7 +10,10 @@ import net.minecraft.client.model.HierarchicalModel;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.geom.PartPose;
 import net.minecraft.client.model.geom.builders.*;
+import net.minecraft.util.Mth;
 import net.minecraft.world.entity.Entity;
+import net.rayl1x.minefear.entity.animations.ModAnimationDefinition;
+import net.rayl1x.minefear.entity.custom.KnightEntity;
 
 public class KnightModel<T extends Entity> extends HierarchicalModel<T> {
 
@@ -529,8 +532,20 @@ public class KnightModel<T extends Entity> extends HierarchicalModel<T> {
 	}
 
 	@Override
-	public void setupAnim(Entity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
+	public void setupAnim(T entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
+		this.root().getAllParts().forEach(ModelPart::resetPose);
+		this.applyHeadRotation(netHeadYaw, headPitch, ageInTicks);
 
+		this.animateWalk(ModAnimationDefinition.KNIGHT_WALK, limbSwing, limbSwingAmount, 2f, 2.5f);
+		this.animate(((KnightEntity) entity).idleAnimationState, ModAnimationDefinition.KNIGHT_POSE, ageInTicks, 1f);
+	}
+
+	private void applyHeadRotation(float pNetHeadYaw, float pHeadPitch, float pAgeInTicks) {
+		pNetHeadYaw = Mth.clamp(pNetHeadYaw, -30.0F, 30.0F);
+		pHeadPitch = Mth.clamp(pHeadPitch, -25.0F, 45.0F);
+
+		this.head.yRot = pNetHeadYaw * ((float)Math.PI / 180F);
+		this.head.xRot = pHeadPitch * ((float)Math.PI / 180F);
 	}
 
 	@Override
